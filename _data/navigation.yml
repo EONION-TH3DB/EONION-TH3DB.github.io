@@ -1,6 +1,6 @@
 # main links
 main:
-   title: "Quick-Start Guide"
+  - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
@@ -10,10 +10,3 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  
-  foo:
-    - title: "Parent Link 1"
-      url : /parent-1-page-url/
-      children:
-        - title: "Child Link 1"
-          url : /child-1-page-url/
