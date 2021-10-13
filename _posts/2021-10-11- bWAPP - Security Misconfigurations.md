@@ -1,3 +1,9 @@
+---
+title: "[bWAPP] 6 Security Misconfigurations"
+---
+
+
+
 ## Definition
 
 잘못되거나 과도한 보안 설정으로 발생
