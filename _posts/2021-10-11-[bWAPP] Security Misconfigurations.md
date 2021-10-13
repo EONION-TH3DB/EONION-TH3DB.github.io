@@ -15,9 +15,7 @@
 
 페이지에 대한 접근 권한을 설정하는 파일, 웹 크롤러의 접근 범위 설정 가능
 
-<img src="20211012_003838.png" alt="20211012_003838" style="zoom: 150%;" />
-
-
+![image-20211013224743151](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211013224743151.png)
 
 ## 2. Insecure WebDAV Configuration
 
