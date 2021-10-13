@@ -51,7 +51,7 @@ title: "[bWAPP] 6. Security Misconfigurations"
 
 - wp-config.bak 파일에 접근
 
-<img src="image-20211013235256071.png" alt="image-20211013235256071" style="zoom:78%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211014020629609.png" alt="image-20211014020629609" style="zoom:78%;" />
 
 - DB 접속 정보 평문으로 노출
 
@@ -96,7 +96,7 @@ title: "[bWAPP] 6. Security Misconfigurations"
 
 ### 난이도 : 하
 
-<img src="image-20211014014739763.png" alt="image-20211014014739763" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211014014739763.png" alt="image-20211014014739763" style="zoom:67%;" />
 
 ### /webdav/
 
