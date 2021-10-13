@@ -1,5 +1,5 @@
 ---
-title: "[bWAPP] 6 Security Misconfigurations"
+title: "[bWAPP] 6. Security Misconfigurations"
 ---
 
 
