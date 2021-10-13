@@ -4,8 +4,9 @@ title: "[bWAPP] 6. Security Misconfigurations"
 
 ## Definition
 
-- 잘못된 보안 구성
-- 잘못되거나 과도한 보안 설정으로 발생
+잘못된 보안 구성
+
+잘못되거나 과도한 보안 설정으로 발생
 
 
 
@@ -83,7 +84,7 @@ title: "[bWAPP] 6. Security Misconfigurations"
 
 ### 난이도 : 하
 
-<img src="image-20211014002025086.png" alt="image-20211014002025086" style="zoom:68%;" />
+<img src="image-20211014014739763.png" alt="image-20211014014739763" style="zoom:67%;" />
 
 ### /webdav/
 
