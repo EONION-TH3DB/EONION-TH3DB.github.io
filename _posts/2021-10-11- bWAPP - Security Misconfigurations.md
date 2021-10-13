@@ -9,17 +9,16 @@ title: "[bWAPP] 6. Security Misconfigurations"
 
 
 
-## Object
+## 1. Robots File
+
+### Object
 
 - bWAPP의 robots.txt 파일 확인하는 시나리오
 - 더 나아가, 구글 해킹의 대응방안에 관한 위협을 알아보자
 
-
-
-## 1. Robots File
 ### robots.txt
 
-페이지에 대한 접근 권한을 설정하는 파일, 웹 크롤러의 접근 범위 설정 가능
+- 페이지에 대한 접근 권한을 설정하는 파일, 웹 크롤러의 접근 범위 설정 가능
 
 |         명령어         |            내용            |
 | :--------------------: | :------------------------: |
@@ -40,7 +39,7 @@ title: "[bWAPP] 6. Security Misconfigurations"
 
 ### /admin/ 
 
-![image-20211013234943219](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211013234943219.png "192.168.15.131/bWAPP/admin/")
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211013234943219.png" alt="image-20211013234943219" title="192.168.15.131/bWAPP/admin/" style="zoom: 60%;" />
 
 - 관리자 페이지에 페이지 인증 과정 없이 직접 접근 가능
 - 관리자 계정인 'bee/bug', 내부 IP정보, 서버 정보 노출
@@ -51,7 +50,7 @@ title: "[bWAPP] 6. Security Misconfigurations"
 
 - wp-config.bak 파일에 접근
 
-![image-20211013235256071](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211013235256071.png)
+<img src="image-20211013235256071.png" alt="image-20211013235256071" style="zoom:78%;" />
 
 - DB 접속 정보 평문으로 노출
 
@@ -70,7 +69,23 @@ title: "[bWAPP] 6. Security Misconfigurations"
 
 ## 2. Insecure WebDAV Configuration
 
+### Object
 
+- bWAPP에 WebDAV 기능 활성화로 디렉토리 검색 및 악의적인 파일을 업로드하는 시나리오
+- PUT Method를 이용해 WebDAV에 악의적인 파일을 업로드하는 취약점을 다뤄보자
+
+### WebDAV
+
+- 원격적으로 웹 서버를 제어할 수 있는 HTTP Protocol의 확장 기능
+- 보안설정 미흡할 시 악성 스크립트가 포함된 파일 업로드하여 시스템에 침투 우려
+- 기존 파일 수정하여 악의적인 행위 우려
+- PUT Method를 허용하는 몇몇 서비스에서 악성 웹셸 업로드될 우려
+
+### 난이도 : 하
+
+<img src="image-20211014002025086.png" alt="image-20211014002025086" style="zoom:68%;" />
+
+### /webdav/
 
 
 
