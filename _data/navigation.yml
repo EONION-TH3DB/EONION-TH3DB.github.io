@@ -4,6 +4,14 @@ main:
   #  url: "/"
   - title: "Introduce"
     url: /about/
+  - title: "bWAPP"
+    url: /bWAPP/
+  - title: "Reversing"
+    url: /reversing/
+  - title: "정보처리기사"
+    url: /information/
+  - title: "기업분석"
+    url: /analyze/
   - title: "Category"
     url: "/categories/"
   - title: "Tags"
