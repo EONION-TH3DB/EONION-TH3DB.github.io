@@ -1,5 +1,5 @@
 ---
-title: "[bWAPP] 6. Security Misconfigurations"
+tiC:\Users\wjddj\OneDrive\문서\GitHub\EONION-TH3DB.github.io\_posts\2021-10-11- bWAPP - Security Misconfigurations.mdtle: "[bWAPP] 6. Security Misconfigurations"
 ---
 
 ## Definition
@@ -68,7 +68,7 @@ title: "[bWAPP] 6. Security Misconfigurations"
 
 
 
-## 2. Insecure WebDAV Configuration
+## Insecure WebDAV Configuration
 
 ### Object
 
