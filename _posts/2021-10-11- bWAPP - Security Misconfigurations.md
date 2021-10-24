@@ -10,7 +10,7 @@ title: "[bWAPP] 6. Security Misconfigurations"
 
 
 
-## 1. Robots File
+## Robots File
 
 ### Object
 
