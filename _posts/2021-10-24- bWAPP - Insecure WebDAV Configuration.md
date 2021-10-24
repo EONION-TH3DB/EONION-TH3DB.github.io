@@ -1,5 +1,5 @@
 ---
-tiC:\Users\wjddj\EONION-TH3DB.github.io\_posts\2021-10-24- bWAPP - Insecure WebDAV Configuration.mdtle: "[bWAPP] 6. Security Misconfigurations"
+tiC:\Users\wjddj\EONION-TH3DB.github.io\_posts\2021-10-24- bWAPP - Insecure WebDAV Configuration.mdtle: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 
 ---
 
