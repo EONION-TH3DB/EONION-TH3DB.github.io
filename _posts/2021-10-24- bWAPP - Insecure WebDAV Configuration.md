@@ -42,6 +42,8 @@ title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 
 ### /webdav/
 
+![image-20211027015934535](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211027015934535.png)
+
 [WebDAV] 클릭 시 목록 확인 가능
 
 ![image-20211027015132130](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/C%3A/Users/wjddj/EONION-TH3DB.github.io/imgimage-20211027015132130.png)
