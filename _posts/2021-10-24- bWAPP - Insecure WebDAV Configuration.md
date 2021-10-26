@@ -4,8 +4,6 @@ title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 
 ## Definition
 
-C:\Users\wjddj\EONION-TH3DB.github.io\_posts\2021-10-24- bWAPP - Insecure WebDAV Configuration.md
-
 잘못된 보안 구성
 
 잘못되거나 과도한 보안 설정으로 발생

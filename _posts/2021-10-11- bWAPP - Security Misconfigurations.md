@@ -1,5 +1,5 @@
 ---
-tiC:\Users\wjddj\EONION-TH3DB.github.io\_posts\2021-10-11- bWAPP - Security Misconfigurations.mdtle: "[bWAPP] 6. Security Misconfigurations - Robots File"
+title: "[bWAPP] 6. Security Misconfigurations - Robots File"
 ---
 
 ## Definition
