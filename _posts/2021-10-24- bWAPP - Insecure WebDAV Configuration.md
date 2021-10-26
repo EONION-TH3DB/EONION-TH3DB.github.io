@@ -44,11 +44,11 @@ title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 
 [WebDAV] 클릭 시 목록 확인 가능
 
-<img src="image-20211027003647011.png" alt="image-20211027003647011" style="zoom:80%;" />
+![image-20211027015132130](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/C%3A/Users/wjddj/EONION-TH3DB.github.io/imgimage-20211027015132130.png)
 
 ### WebDav 사용 여부
 
-
+![image-20211027015102775](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/C%3A/Users/wjddj/EONION-TH3DB.github.io/imgimage-20211027015102775.png)
 
 - kali > msfdb start - 메타스플로잇 시작
 - kali > msfconsole 
