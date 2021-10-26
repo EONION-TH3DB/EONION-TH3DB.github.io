@@ -1,9 +1,10 @@
 ---
-tiC:\Users\wjddj\EONION-TH3DB.github.io\_posts\2021-10-24- bWAPP - Insecure WebDAV Configuration.mdtle: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
-
+title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 ---
 
 ## Definition
+
+C:\Users\wjddj\EONION-TH3DB.github.io\_posts\2021-10-24- bWAPP - Insecure WebDAV Configuration.md
 
 잘못된 보안 구성
 
