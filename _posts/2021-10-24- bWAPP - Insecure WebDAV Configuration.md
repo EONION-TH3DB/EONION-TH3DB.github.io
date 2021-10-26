@@ -46,11 +46,11 @@ C:\Users\wjddj\EONION-TH3DB.github.io\_posts\2021-10-24- bWAPP - Insecure WebDAV
 
 [WebDAV] 클릭 시 목록 확인 가능
 
-<img src="image-20211027003254705.png" alt="image-20211027003254705" style="zoom: 80%;" />
+<img src="image-20211027003647011.png" alt="image-20211027003647011" style="zoom:80%;" />
 
 ### WebDav 사용 여부
 
-![image-20211027003510350](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211027003510350.png)
+
 
 - kali > msfdb start - 메타스플로잇 시작
 - kali > msfconsole 
