@@ -1,5 +1,5 @@
 ---
-title: "[bWAPP] 4. Insecrue DOR - Change Secret"
+title: "[bWAPP] 4. Insecrue DOR - Reset Secret"
 ---
 
 # Definition 
