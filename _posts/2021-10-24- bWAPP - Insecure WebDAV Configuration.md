@@ -6,7 +6,7 @@ title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 
 잘못된 보안 구성
 
-잘못되거나 과도한 보안 설정으로 발생
+잘못되거나 과도한 보안 설정으로 발생 - 1
 
 
 
