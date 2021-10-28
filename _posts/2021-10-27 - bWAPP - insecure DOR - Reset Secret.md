@@ -1,5 +1,5 @@
 ---
-title: "[bWAPP] 4. Insecrue DOR - Reset Secret"
+title: "[bWAPP] 4. Insecrue Direct Object References - Reset Secret"
 ---
 
 # Definition 

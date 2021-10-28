@@ -1,5 +1,5 @@
 ---
-title: "[bWAPP] 4. Insecrue DOR - Order Tickets"
+title: "[bWAPP] 4. Insecrue Direct Object References - Order Tickets"
 ---
 
 # Definition 
