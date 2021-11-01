@@ -20,9 +20,39 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Remote & Local File
 
 서버 내부에 있는 파일을 확인하는 공격
 
-서버에 접근하는 변수 중 취약한 변수에 상대경로를 사용하여 서버 내부에 접근
+서버에 접근하는 변수 중 취약한 변수에 상대경로(../)를 사용하여 서버 내부에 접근
 
-# Remote & Local File Inclusion (RFI/LFI)
+# Local File Inclusion (RFI/LFI)
 
 ## Object
+
+GET 방식으로 HTTP 요청을 사용하는 웹 페이지의 URL에 상대경로(../)를 이용하여 정보를 갈취해보자
+
+
+
+### 난이도 : 하
+
+![image-20211101194815125](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211101194815125.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

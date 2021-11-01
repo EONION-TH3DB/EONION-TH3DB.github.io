@@ -16,7 +16,7 @@ title: "[bWAPP] 4. Insecrue Direct Object References - Reset Secret"
 
 접근 제어나 검증 절차가 없으면 공격자는 허가 없이 객체 참조를 조작하여 데이터에 접근 가능
 
-# Change Secret
+# Reset Secret
 
 ## Object
 
@@ -68,10 +68,46 @@ title: "[bWAPP] 4. Insecrue Direct Object References - Reset Secret"
 
 ### BeeBox
 
-![image-20211027234909751](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211027234909751.png)
+![image-20211029235608655](image-20211029235608655.png)
+
+![image-20211029235720767](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211029235720767.png)
 
 - 디렉토리 변경
-- vi 편집기로 sqli_16.php(해당 웹페이지) 소스 코드 열기
+- xxe-2.php를 호출하여 비밀번호 힌트 초기화하므로 vi 편집기로 xxe-2.php(해당 웹페이지) 소스 코드 열기
+
+### Beebox - 1
+
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211030000350317.png" alt="image-20211030000350317" style="zoom:92%;" />
+
+- xxe-2.php 페이지는 난이도 중 이상부터 변수에 입력된 값 필터링
+- 난이도 상에서는 로그인 변수에 사용하는 아이디를 세션에서 입력받아 입력하므로 버프스위트로 수정하여도 해당 사용자의 아이디와 비밀번호 초기화 됨
+-  mysqli_real_escape_string : Null, \n, \r, \, ', ", ^Z 문자에 백슬래시를 붙여 SQL Injection 공격 방어
+-  XML 코드를 일반 문자로 변경하여 XXE 공격에 방어
+-  MYSQL UPDATE __ SET __ 구문으로 secret 변수에 입력된 내용으로 비밀번호 힌트 초기화
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Beebox - 1
 

@@ -90,7 +90,7 @@ title: "[bWAPP] 4. Insecrue Direct Object References - Change Secret"
 ![image-20211027224944471](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211027224944471.png)
 
 - mysql_real_escape_string : Null, \n, \r, \, ', ", ^Z 문자에 백슬래시를 붙여 SQL Injection 공격 방어
-- htmlspecialchars : html에 사용되는 기호를 UTF-8로 반환하여 html 코드에 사용되는 문자들을 html 엔티티 코드로 반환 / 즉, 메타문자가 html 태그로 상요되지 않도록 방지하여 그대로 출력하게 함
+- htmlspecialchars : html에 사용되는 기호를 UTF-8로 반환하여 html 코드에 사용되는 문자들을 html 엔티티 코드로 반환 / 즉, 메타문자가 html 태그로 상용되지 않도록 방지하여 그대로 출력하게 함
 
 
 

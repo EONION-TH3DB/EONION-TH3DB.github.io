@@ -69,4 +69,3 @@ title: "[bWAPP] 4. Insecrue Direct Object References - Order Tickets"
 
 - 티켓 가격 코드 확인 불가
 - 서버측에서 값을 받아와 DB에 전달될 때까지 사용자가 수정을 못하도록 대응
-
