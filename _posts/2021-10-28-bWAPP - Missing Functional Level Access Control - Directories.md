@@ -2,9 +2,9 @@
 title: "[bWAPP] 7. Missing Functional Level Access Control - Directory Traversal - Directories"
 ---
 
+<br>
 
-
-
+<br>
 
 ## Missing Functional Level Access Control
 
@@ -12,11 +12,11 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Directory Traversal
 
 대표적으로 파일 다운로드와 업로드 취약점을 이용하여 웹 서버에 접근하는 공격
 
+<br>
 
+<br>
 
-
-
-
+<br>
 
 ## Directory Traversal
 
@@ -26,11 +26,11 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Directory Traversal
 
 때문에 공격자는 시스템과 DB의 정보를 수집 가능
 
+<br>
 
+<br>
 
-
-
-
+<br>
 
 ## Directories
 
@@ -38,7 +38,7 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Directory Traversal
 
 GET 메소드를 사용하는 웹 페이지(bWAPP - Directories)의 특성을 이용해 서버에 있는 디렉토리 정보를 알아보자
 
-
+<br>
 
 ### 1. Robots.txt  시나리오  응용
 
@@ -48,7 +48,7 @@ GET 메소드를 사용하는 웹 페이지(bWAPP - Directories)의 특성을 �
 - 'Robots.txt' 시나리오에서 확인했던 디렉토리 중 'documents'에 업로드 되어있는 파일들 확인
 - 'documents'를 'passwords' 디렉토리로 수정
 
-
+<br>
 
 ### passwords
 
@@ -57,7 +57,7 @@ GET 메소드를 사용하는 웹 페이지(bWAPP - Directories)의 특성을 �
 - 'passwords' 디렉토리로 이동
 - accounts.txt, heroes.xml 파일에서 웹 사이트에 사용하는 계정 정보가 담겨있다고 추측 가능
 
-
+<br>
 
 ### 2. ../ 상대경로 이용
 
@@ -66,7 +66,7 @@ GET 메소드를 사용하는 웹 페이지(bWAPP - Directories)의 특성을 �
 - 상대경로 이용해 해당 웹페이지의 상위 디렉토리 정보 확인 가능
 - etc로 이동
 
-
+<br>
 
 ### ../../../etc
 
@@ -78,7 +78,7 @@ GET 메소드를 사용하는 웹 페이지(bWAPP - Directories)의 특성을 �
 - Ctrl + F 로 passwd에 계정 정보가 있다고 추측
 - passwd 클릭
 
-
+<br>
 
 ### passwd
 
@@ -87,11 +87,11 @@ GET 메소드를 사용하는 웹 페이지(bWAPP - Directories)의 특성을 �
 - passwd가 디렉터리가 아닌 파일이기 때문에 접근 불가
 - 다음 게시물인 Files 시나리오에서 다뤄볼 예정
 
+<br>
 
+<br>
 
-
-
-
+<br>
 
 ## 대응방안 - Beebox
 
@@ -102,7 +102,7 @@ GET 메소드를 사용하는 웹 페이지(bWAPP - Directories)의 특성을 �
 - 디렉토리 변경
 - vi 편집기로 해당 웹 소스코드 열기
 
-
+<br>
 
 ### Beebox - 2
 
@@ -110,7 +110,7 @@ GET 메소드를 사용하는 웹 페이지(bWAPP - Directories)의 특성을 �
 
 - 난이도 확인
 
-
+<br>
 
 ### Beebox - 3
 
@@ -121,7 +121,7 @@ GET 메소드를 사용하는 웹 페이지(bWAPP - Directories)의 특성을 �
 - "case 2 : 난이도 상"에서는 기본 경로 변수를 base_path로 documents를 지정하여 상대경로에 대한 접근 방지
 - 또한 "난이도 상"에서 directory_traversal_check_3 함수 사용
 
-
+<br>
 
 ### Beebox  - 4
 
