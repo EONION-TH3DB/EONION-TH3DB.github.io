@@ -16,11 +16,15 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Server Side Request
 
 
 
+
+
 ## Server Side Request Forgery (SSRF)
 
 공격자가 요청을 변조하여 취약한 서버가 내부 망에 악의적인 요청을 보내게 하는 취약점
 
 OWASP 2021 TOP 10의 A.10에 랭크
+
+
 
 
 
@@ -87,6 +91,8 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 
 
 
+
+
 ## RFI - 대응방안 - Beebox
 
 ### Terminal
@@ -96,11 +102,15 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 - 디렉토리 변경
 - vi 편집기로 해당 시나리오 소스 코드 조회
 
+
+
 ### rlfi.php
 
 ![image-20211104215356539](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211104215356539.png)
 
 - Level 확인
+
+
 
 ### LFI
 
@@ -109,11 +119,15 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 - language 변수에 입력할 내용을 배열로 한정하는 화이트 리스트 방식을 사용
 - 즉, 안전이 증명된 값만을 취함
 
+
+
 ### RFI
 
 ![image-20211104220938080](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211104220938080.png)
 
 - language 변수에 들어오는 입력 값을 생성한 배열로 검증하기 때문에 RFI 공격에 사용한 cmd 변수나 URL은 입력하지 못함
+
+
 
 
 
@@ -195,6 +209,8 @@ XML 문서는 엔티티라는 저장 단위로 구성
 ![image-20211104003455818](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211104003455818.png)
 
 - 디코딩 결과 heroes.xml은 superhero 그룹 사용자의 계정 정보를 저장한 파일임을 확인
+
+
 
 
 

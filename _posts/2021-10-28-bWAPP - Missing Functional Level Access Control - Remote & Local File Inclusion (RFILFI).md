@@ -16,6 +16,8 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Remote & Local File
 
 
 
+
+
 ## File Inclusion
 
 악의적인 코드가 입력된 파일을 공격자가 서버에 업로드하여 사용자가 열람하는 공격
@@ -33,6 +35,8 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Remote & Local File
 ### RFI(Remote File Inclusion)
 
 공격자가 악성 코드가 있는 원격 서버의 파일을 공격 대상인 웹 애플리케이션 서버에서 실행시켜 취약한 웹 페이지에 악의적인 스크립트를 실행하게 하는 공격
+
+
 
 
 
@@ -56,6 +60,8 @@ GET 방식으로 HTTP 요청을 사용하는 웹 페이지의 URL에 상대경�
 
 - 변수에 ../../../../../etc/passwd 로 상위 파일 상대경로와 etc 디렉터리, passwd 파일 설정
 - 데이터베이스 내의 비박스 계정 패스워드 정보 열람
+
+
 
 
 
@@ -90,6 +96,8 @@ GET 방식으로 HTTP 요청을 사용하는 웹 페이지의 URL에 상대경�
 ### passwords/accounts.txt 입력
 
 ![image-20211101211353036](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211101211353036.png)
+
+
 
 
 

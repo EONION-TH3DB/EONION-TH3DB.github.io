@@ -16,11 +16,15 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Restrict Device Acc
 
 
 
+
+
 ## Restrict Device Access
 
 웹 사용자 브라우저에서 모바일 페이지로의 접근을 제한
 
 보안 측면 상 PC 단말에서 데이터를 조작하는 행위를 방어하기 위한 설정
+
+
 
 
 
@@ -53,6 +57,8 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Restrict Device Acc
 
 - User Agent 헤더 정보 변경이 완료되어 모바일 버전으로 접속
 - PC 버전에서 보이지 않던 메시지 확인
+
+
 
 
 
