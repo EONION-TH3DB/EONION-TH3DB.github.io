@@ -1,7 +1,8 @@
 ---
 title: "[bWAPP] 7. Missing Functional Level Access Control - Server Side Request Forgery (SSRF)"
-
 ---
+
+
 
 
 
