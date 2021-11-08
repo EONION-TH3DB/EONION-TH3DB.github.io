@@ -2,9 +2,7 @@
 title: "[bWAPP] 7. Missing Functional Level Access Control - Server Side Request Forgery (SSRF)"
 ---
 
-
-
-
+<br>
 
 ## Missing Functional Level Access Control
 
@@ -12,11 +10,9 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Server Side Request
 
 대표적으로 파일 다운로드와 업로드 취약점을 이용하여 웹 서버에 접근하는 공격
 
+<br>
 
-
-
-
-
+<br>
 
 ## Server Side Request Forgery (SSRF)
 
@@ -24,11 +20,9 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Server Side Request
 
 OWASP 2021 TOP 10의 A.10에 랭크
 
+<br>
 
-
-
-
-
+<br>
 
 ## 시나리오
 
@@ -40,7 +34,7 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 
 ![image-20211103213517603](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211103213517603.png)
 
-
+<br>
 
 ## 1. RFI를 이용한 내부 네트워크 호스트의 포트 스캔
 
@@ -50,7 +44,7 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 
 - RFI 취약점이 있는 해당 시나리오로 이동
 
-
+<br>
 
 ### Beebox
 
@@ -58,7 +52,7 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 
 - RFI에 사용할 PHP 코드로 var/www/evil/ssrf-1.txt 선택
 
-
+<br>
 
 ### ssrf-1.txt
 
@@ -68,7 +62,7 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 - 스캔하는 포트 배열로 선언 후 포트가 열려있는지 확인
 - PHP 코드 실행되면 'U 4r3 0wn3d by MME!!!' 내용 출력
 
-
+<br>
 
 ### A7. Remote & Local File Inclusion (RFI/LFI)
 
@@ -78,7 +72,7 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 - 포트를 스캐닝할 웹 서버의 IP주소 입력
 - language 변수에 ssrf-1.txt의 경로 입력
 
-
+<br>
 
 ### A7. Remote & Local File Inclusion (RFI/LFI)
 
@@ -87,11 +81,9 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 - 코드 실행으로 ‘U 4r3 0wn3d by MME!!!’ 메시지 출력
 - 확인 누를시 웹 페이지에 포트 스캐닝 결과 출력
 
+<br>
 
-
-
-
-
+<br>
 
 ## RFI - 대응방안 - Beebox
 
@@ -102,7 +94,7 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 - 디렉토리 변경
 - vi 편집기로 해당 시나리오 소스 코드 조회
 
-
+<br>
 
 ### rlfi.php
 
@@ -110,7 +102,7 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 
 - Level 확인
 
-
+<br>
 
 ### LFI
 
@@ -119,7 +111,7 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 - language 변수에 입력할 내용을 배열로 한정하는 화이트 리스트 방식을 사용
 - 즉, 안전이 증명된 값만을 취함
 
-
+<br>
 
 ### RFI
 
@@ -127,11 +119,9 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 
 - language 변수에 들어오는 입력 값을 생성한 배열로 검증하기 때문에 RFI 공격에 사용한 cmd 변수나 URL은 입력하지 못함
 
+<br>
 
-
-
-
-
+<br>
 
 ## 2. XXE를 사용하여 내부 네트워크 자원 접근
 
@@ -139,7 +129,7 @@ XML 문서는 엔티티라는 저장 단위로 구성
 
 외부 엔티티를 선언 시 다른 파일의 텍스트 가져올 수 있음
 
-
+<br>
 
 ### A7. SSRF
 
@@ -147,14 +137,13 @@ XML 문서는 엔티티라는 저장 단위로 구성
 
 - Access 클릭
 
-
+<br>
 
 ### ssrf-2.txt
 
 ![image-20211103232854426](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211103232854426.png)
 
 - 1번은 robots.txt를 출력하는 XML 외부 엔티티 공격
-
 - 2번은 heroes.xml를 출력하는 XML 외부 엔티티 공격 << 선택
 
   - XML은 문서 선언을 위해 DTD를 사용
@@ -163,7 +152,8 @@ XML 문서는 엔티티라는 저장 단위로 구성
   - bWAPP 이라는 엔티티는 heroes.xml 파일을 php://filter/read=convert.base64-encode/resource= 필터를 통해 Base64로 인코딩한 결과를 출력
   - 엔티티 선언 후 선언한 엔티티 참조하기 위해 &bWAPP;를 변수에 입력
   
-  
+
+<br>
 
 ### A1. Stored (XML)
 
@@ -172,7 +162,7 @@ XML 문서는 엔티티라는 저장 단위로 구성
 - XML로 비밀번호 힌트를 초기화하는 시나리오로 이동
 - Burp Suite로 Any bugs? 버튼 클릭 시 요청되는 패킷을 잡아보자
 
-
+<br>
 
 ### Burp-Suite
 
@@ -185,7 +175,7 @@ XML 문서는 엔티티라는 저장 단위로 구성
 - 5 : Send to Repeater
 - 6 : Repeater
 
-
+<br>
 
 ### Burp-Suite
 
@@ -193,7 +183,7 @@ XML 문서는 엔티티라는 저장 단위로 구성
 
 - body 부분을 ssrf-2.txt 에서 선택한 heroes.xml 부분 복사
 
-
+<br>
 
 ### Burp-Suite
 
@@ -202,7 +192,7 @@ XML 문서는 엔티티라는 저장 단위로 구성
 - ssrf-2.txt / heroes.xml 복사 후 Send 버튼 클릭
 - Response값에 Base64로 인코딩된 내용 확인
 
-
+<br>
 
 ### Burp-Suite
 
@@ -210,11 +200,9 @@ XML 문서는 엔티티라는 저장 단위로 구성
 
 - 디코딩 결과 heroes.xml은 superhero 그룹 사용자의 계정 정보를 저장한 파일임을 확인
 
+<br>
 
-
-
-
-
+<br>
 
 ## XXE - 대응방안
 

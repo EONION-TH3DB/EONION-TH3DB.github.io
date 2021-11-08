@@ -2,9 +2,7 @@
 title: "[bWAPP] 7. Missing Functional Level Access Control - Restrict Device Access"
 ---
 
-
-
-
+<br>
 
 ## Missing Functional Level Access Control
 
@@ -12,11 +10,9 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Restrict Device Acc
 
 대표적으로 파일 다운로드와 업로드 취약점을 이용하여 웹 서버에 접근하는 공격
 
+<br>
 
-
-
-
-
+<br>
 
 ## Restrict Device Access
 
@@ -24,11 +20,9 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Restrict Device Acc
 
 보안 측면 상 PC 단말에서 데이터를 조작하는 행위를 방어하기 위한 설정
 
+<br>
 
-
-
-
-
+<br>
 
 ## 시나리오
 
@@ -41,7 +35,7 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Restrict Device Acc
 - PC로 접근하기 때문에 모바일이 아니라는 경고 메시지
 - Chrome에서 User Agent Switcher라는 플러그인 다운로드
 
-
+<br>
 
 ### User Agent Switcher
 
@@ -58,11 +52,9 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Restrict Device Acc
 - User Agent 헤더 정보 변경이 완료되어 모바일 버전으로 접속
 - PC 버전에서 보이지 않던 메시지 확인
 
+<br>
 
-
-
-
-
+<br>
 
 ## 대응방안
 
