@@ -18,6 +18,8 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Directory Traversal
 
 
 
+
+
 ## Directory Traversal
 
 주로 파일 다운로드 취약점과 같은 뜻으로 사용
@@ -25,6 +27,8 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Directory Traversal
 상대경로나 기본으로 설정된 파일명, 디렉터리명을 통해 접근을 허용하지 않은 디렉터리나 파일에 접근
 
 때문에 공격자는 시스템과 DB의 정보를 수집 가능
+
+
 
 
 
@@ -40,12 +44,16 @@ GET 메소드를 사용하는 웹 페이지(bwapp - Files)의 특성을 이용�
 
 
 
+
+
 ### 시나리오
 
 ![image-20211028211704174](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211028211704174.png)
 
 - 이전 게시물인 Directories에서 확인했다 싶이 이번 시나리오 또한 HTTP 연결 요청으로 GET 방식 사용하여 URL에 변수 노출
 - 상대경로를 사용해보자
+
+
 
 
 
@@ -58,12 +66,16 @@ GET 메소드를 사용하는 웹 페이지(bwapp - Files)의 특성을 이용�
 
 
 
+
+
 ### ../../../etc/passwd
 
 ![image-20211028212302408](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211028212302408.png)
 
 - 서버에 접근할 수 있는 ID와 접근 권한 등을 기록한 파일이라는 것 확인
 - 저장된 파일의 디렉터리와 파일명을 알고 있다면 원하는 DB 정보 알아낼 수 있음
+
+
 
 
 
@@ -82,11 +94,15 @@ GET 메소드를 사용하는 웹 페이지(bwapp - Files)의 특성을 이용�
 
 
 
+
+
 ### Beebox  - 2
 
 ![image-20211028213023725](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211028213023725.png)
 
 - Security Level 확인
+
+
 
 
 
@@ -97,6 +113,8 @@ GET 메소드를 사용하는 웹 페이지(bwapp - Files)의 특성을 이용�
 - "case 0 : 난이도 하"에서 아무런 보안 조치 X
 - "case 0 : 난이도 중"에서 directory_traversal_check_1 함수 사용해 변수에 입력한 데이터가 올바른 데이터인지 확인
 - "case 0 : 난이도 상"에서 directory_traversal_check_3 함수 사용해 변수에 입력한 데이터가 올바른 데이터인지 확인
+
+
 
 
 
