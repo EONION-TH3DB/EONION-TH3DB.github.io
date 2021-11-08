@@ -4,37 +4,45 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Remote & Local File
 
 
 
+
+
 ## Missing Functional Level Access Control
 
 접근 통제와 확인이 서버의 설정이나 관리 측면에서 이루어지지 않을때 발생하는 취약점
 
 대표적으로 파일 다운로드와 업로드 취약점을 이용하여 웹 서버에 접근하는 공격
 
-# File Inclusion
+
+
+
+
+## File Inclusion
 
 악의적인 코드가 입력된 파일을 공격자가 서버에 업로드하여 사용자가 열람하는 공격
 
-# LFI(Local File Inclusion)
+
+
+### LFI(Local File Inclusion)
 
 서버 내부에 있는 파일을 확인하는 공격
 
 서버에 접근하는 변수 중 취약한 변수에 상대경로(../)를 사용하여 서버 내부에 접근
 
-# RFI(Remote File Inclusion)
+
+
+### RFI(Remote File Inclusion)
 
 공격자가 악성 코드가 있는 원격 서버의 파일을 공격 대상인 웹 애플리케이션 서버에서 실행시켜 취약한 웹 페이지에 악의적인 스크립트를 실행하게 하는 공격
 
-#  Local File Inclusion (RFI/LFI)
 
-## Object
+
+
+
+## Local File Inclusion (LFI)
+
+### Object
 
 GET 방식으로 HTTP 요청을 사용하는 웹 페이지의 URL에 상대경로(../)를 이용하여 정보를 갈취해보자
-
-
-
-## 시나리오
-
-### 난이도 : 하
 
 ![image-20211101200326870](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211101200326870.png)
 
@@ -42,22 +50,24 @@ GET 방식으로 HTTP 요청을 사용하는 웹 페이지의 URL에 상대경�
 
 
 
+### URL
+
 ![image-20211101194815125](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211101194815125.png)
 
 - 변수에 ../../../../../etc/passwd 로 상위 파일 상대경로와 etc 디렉터리, passwd 파일 설정
 - 데이터베이스 내의 비박스 계정 패스워드 정보 열람
 
-# Remote File Inclusion(RFI)
 
-## Object
+
+
+
+## Remote File Inclusion(RFI)
+
+### Object
 
 특정 bWAPP 시나리오에 특정 스크립트 삽입하여 (LFI/RFI) 시나리오에 원격 공격을 시도해보자
 
 
-
-## 시나리오
-
-### 난이도 : 하
 
 ### A6. Sensitive Data Exposure - Text Files (Accouts)
 
@@ -77,11 +87,15 @@ GET 방식으로 HTTP 요청을 사용하는 웹 페이지의 URL에 상대경�
 
 
 
+### passwords/accounts.txt 입력
+
 ![image-20211101211353036](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211101211353036.png)
 
-# 대응방안
 
-## Beebox
+
+
+
+## 대응방안 - Beebox
 
 ### Terminal
 
@@ -90,11 +104,15 @@ GET 방식으로 HTTP 요청을 사용하는 웹 페이지의 URL에 상대경�
 - 디렉토리 변경
 - vi 편집기로 해당 시나리오 소스 코드 조회
 
+
+
 ### rlfi.php
 
 ![image-20211104215356539](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211104215356539.png)
 
 - Level 확인
+
+
 
 ### LFI
 
@@ -102,6 +120,8 @@ GET 방식으로 HTTP 요청을 사용하는 웹 페이지의 URL에 상대경�
 
 - language 변수에 입력할 내용을 배열로 한정하는 화이트 리스트 방식을 사용
 - 즉, 안전이 증명된 값만을 취함
+
+
 
 ### RFI
 
