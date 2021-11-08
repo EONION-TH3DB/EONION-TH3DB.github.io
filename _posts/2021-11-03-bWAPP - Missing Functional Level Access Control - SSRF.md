@@ -3,13 +3,19 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Server Side Request
 
 ---
 
-# Definition
+
+
+## Missing Functional Level Access Control
 
 접근 통제와 확인이 서버의 설정이나 관리 측면에서 이루어지지 않을때 발생하는 취약점
 
 대표적으로 파일 다운로드와 업로드 취약점을 이용하여 웹 서버에 접근하는 공격
 
-# Server Side Request Forgery (SSRF)
+
+
+
+
+## Server Side Request Forgery (SSRF)
 
 공격자가 요청을 변조하여 취약한 서버가 내부 망에 악의적인 요청을 보내게 하는 취약점
 
@@ -17,15 +23,15 @@ OWASP 2021 TOP 10의 A.10에 랭크
 
 
 
-## Object
+
+
+## 시나리오
+
+### Object
 
 RFI를 사용해 포트를 스캔하고
 
 XXE를 사용하여 내부 망 자원에 접근해보자
-
-
-
-## 시나리오
 
 ![image-20211103213517603](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211103213517603.png)
 
@@ -78,7 +84,9 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 
 
 
-## 대응방안 - Beebox
+
+
+## RFI - 대응방안 - Beebox
 
 ### Terminal
 
@@ -105,6 +113,8 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 ![image-20211104220938080](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211104220938080.png)
 
 - language 변수에 들어오는 입력 값을 생성한 배열로 검증하기 때문에 RFI 공격에 사용한 cmd 변수나 URL은 입력하지 못함
+
+
 
 
 
@@ -187,7 +197,9 @@ XML 문서는 엔티티라는 저장 단위로 구성
 
 
 
-### 대응방안
+
+
+## XXE - 대응방안
 
 SSRF 대응을 위해서는 요청 값을 필터링하는 정도로는 부족하기 때문에 서버 내부에서 관리적인 대첵 마련
 
