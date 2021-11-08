@@ -4,15 +4,11 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Directory Traversal
 
 <br>
 
-<br>
-
 ## Missing Functional Level Access Control
 
 접근 통제와 확인이 서버의 설정이나 관리 측면에서 이루어지지 않을때 발생하는 취약점
 
 대표적으로 파일 다운로드와 업로드 취약점을 이용하여 웹 서버에 접근하는 공격
-
-<br>
 
 <br>
 
@@ -25,8 +21,6 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Directory Traversal
 상대경로나 기본으로 설정된 파일명, 디렉터리명을 통해 접근을 허용하지 않은 디렉토리나 파일에 접근
 
 때문에 공격자는 시스템과 DB의 정보를 수집 가능
-
-<br>
 
 <br>
 
@@ -86,8 +80,6 @@ GET 메소드를 사용하는 웹 페이지(bWAPP - Directories)의 특성을 �
 
 - passwd가 디렉터리가 아닌 파일이기 때문에 접근 불가
 - 다음 게시물인 Files 시나리오에서 다뤄볼 예정
-
-<br>
 
 <br>
 
