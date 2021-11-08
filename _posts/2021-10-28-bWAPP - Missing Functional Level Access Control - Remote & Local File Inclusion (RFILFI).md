@@ -2,7 +2,9 @@
 title: "[bWAPP] 7. Missing Functional Level Access Control - Remote & Local File Inclusion (RFI/LFI)"
 ---
 
-# Definition
+
+
+## Missing Functional Level Access Control
 
 접근 통제와 확인이 서버의 설정이나 관리 측면에서 이루어지지 않을때 발생하는 취약점
 

@@ -2,13 +2,21 @@
 title: "[bWAPP] 7. Missing Functional Level Access Control - Restrict Device Access"
 ---
 
-# Definition
+
+
+
+
+## Missing Functional Level Access Control
 
 접근 통제와 확인이 서버의 설정이나 관리 측면에서 이루어지지 않을때 발생하는 취약점
 
 대표적으로 파일 다운로드와 업로드 취약점을 이용하여 웹 서버에 접근하는 공격
 
-# Restrict Device Access
+
+
+
+
+## Restrict Device Access
 
 웹 사용자 브라우저에서 모바일 페이지로의 접근을 제한
 
@@ -16,13 +24,13 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Restrict Device Acc
 
 
 
-## Object
-
-모바일에서만 동작하는 페이지를 PC로 접근하여 공격을 시도할 수 있다는 것을 알아보자
-
 
 
 ## 시나리오
+
+### Object
+
+모바일에서만 동작하는 페이지를 PC로 접근하여 공격을 시도할 수 있다는 것을 알아보자
 
 ![image-20211103205657707](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211103205657707.png)
 
@@ -31,7 +39,7 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Restrict Device Acc
 
 
 
-## User Agent Switcher
+### User Agent Switcher
 
 ![image-20211103211059755](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211103211059755.png)
 
@@ -46,7 +54,11 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Restrict Device Acc
 - User Agent 헤더 정보 변경이 완료되어 모바일 버전으로 접속
 - PC 버전에서 보이지 않던 메시지 확인
 
-# 대응방안
+
+
+
+
+## 대응방안
 
 공격자는 모바일에서만 동작하는 페이지를 통해 역으로 공격 시도 가능
 
