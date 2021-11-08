@@ -79,5 +79,4 @@ GET 메소드를 사용하는 웹 페이지(bwapp - Files)의 특성을 이용�
 <img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211028213804708.png" alt="image-20211028213804708" style="zoom:70%;" />
 
 - directory_traversal_check_1 에서 상대경로에 사용하는 특수문자를 검사 후 오류 메시지 출력
-- directory_traversal_check_3 에서 realpath 함수 호출하여 상대경로를 절대경로로 반환 후,
-- strpos 함수로 사용자가 입력한 경로가 기본 경로에 포함되는지 확인 후 오류 메시지 출력
+- directory_traversal_check_3 에서 realpath 함수 호출하여 상대경로를 절대경로로 반환 후, strpos 함수로 사용자가 입력한 경로가 기본 경로에 포함되는지 확인 후 오류 메시지 출력

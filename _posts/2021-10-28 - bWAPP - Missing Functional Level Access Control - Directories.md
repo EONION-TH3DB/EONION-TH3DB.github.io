@@ -12,7 +12,7 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Directory Traversal
 
 주로 파일 다운로드 취약점과 같은 뜻으로 사용
 
-상대경로나 기본으로 설정된 파일명, 디렉터리명을 통해 접근을 허용하지 않은 디렉터리나 파일에 접근
+상대경로나 기본으로 설정된 파일명, 디렉터리명을 통해 접근을 허용하지 않은 디렉토리나 파일에 접근
 
 때문에 공격자는 시스템과 DB의 정보를 수집 가능
 
@@ -26,7 +26,7 @@ GET 메소드를 사용하는 웹 페이지(bwapp - Directories)의 특성을 �
 
 ## 시나리오
 
-### 난이도 : 하
+### 1. Robots.txt 시나리오 응용
 
 ![image-20211028201239090](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211028201239090.png)
 
@@ -39,11 +39,9 @@ GET 메소드를 사용하는 웹 페이지(bwapp - Directories)의 특성을 �
 ![image-20211028201844177](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211028201844177.png)
 
 - 'passwords' 디렉토리로 이동
-- accounts.txt, heroes.xml 파일에서 웹 사이트에 사용하는 계정 정보가 담겨있다고 추측
+- accounts.txt, heroes.xml 파일에서 웹 사이트에 사용하는 계정 정보가 담겨있다고 추측 가능
 
-
-
-### ../ 상대경로
+### 2. ../ 상대경로 이용
 
 ![image-20211028202025864](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211028202025864.png)
 
@@ -58,7 +56,7 @@ GET 메소드를 사용하는 웹 페이지(bwapp - Directories)의 특성을 �
 
 - 여러 파일들 확인 가능
 - Ctrl + F 로 passwd에 계정 정보가 있다고 추측
-- passwd 클릭 or ../../../etc/passwd
+- passwd 클릭
 
 ### passwd
 
@@ -90,7 +88,7 @@ GET 메소드를 사용하는 웹 페이지(bwapp - Directories)의 특성을 �
 
 - "case 0 : 난이도 하"에서는 아무런 보안 조치 X
 - "case 1 : 난이도 중"에서는 directory_travesal_check_2 함수 사용
-- "case 2 : 난이도 상"에서는 기본 경로 변수를 base_path로 documents로 지정하여 상대경로에 대한 접근 방지
+- "case 2 : 난이도 상"에서는 기본 경로 변수를 base_path로 documents를 지정하여 상대경로에 대한 접근 방지
 - 또한 "난이도 상"에서 directory_traversal_check_3 함수 사용
 
 ### Beebox  - 4
@@ -101,4 +99,4 @@ GET 메소드를 사용하는 웹 페이지(bwapp - Directories)의 특성을 �
 
 - vi functions_external.php로 확인
 - "directory_travesal_check_2"에서 상대경로를 통한 접근을 막기 위해 해당 특수문자를 검열하고 그를 통해 감지되었다는 메시지 출력
-- "directory_traversal_check_3"에서 관리자가 지정한 디렉토리와 사용자가 입력한 디렉토리 경로가 다를 경우 오류 메시지 출력
+- directory_traversal_check_3 에서 realpath 함수 호출하여 상대경로를 절대경로로 반환 후, strpos 함수로 사용자가 입력한 경로가 기본 경로에 포함되는지 확인 후 오류 메시지 출력

