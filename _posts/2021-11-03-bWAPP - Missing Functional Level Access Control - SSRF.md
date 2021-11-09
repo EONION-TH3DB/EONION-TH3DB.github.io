@@ -36,6 +36,8 @@ XXE를 사용하여 내부 망 자원에 접근해보자
 
 <br>
 
+<br>
+
 ## 1. RFI를 이용한 내부 네트워크 호스트의 포트 스캔
 
 ### A7. Remote & Local File Inclusion (RFI/LFI)

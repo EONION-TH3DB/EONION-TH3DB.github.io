@@ -2,22 +2,28 @@
 title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 ---
 
-# Definition
+<br>
+
+## Security Misconfigurations
 
 잘못된 보안 구성
 
 잘못되거나 과도한 보안 설정으로 발생
 
-# Insecure WebDAV Configuration
+<br>
 
-## Object
+<br>
+
+## Insecure WebDAV Configuration
+
+### Object
 
 - bWAPP에 WebDAV 기능 활성화로 디렉토리 검색 및 악의적인 파일을 업로드하는 시나리오
 - PUT Method를 이용해 WebDAV에 악의적인 파일을 업로드하는 취약점을 다뤄보자
 
+<br>
 
-
-## WebDAV
+### WebDAV
 
 - 원격적으로 웹 서버를 제어할 수 있는 HTTP Protocol의 확장 기능
 - 보안설정 미흡할 시 악성 스크립트가 포함된 파일 업로드하여 시스템에 침투 우려
@@ -36,17 +42,21 @@ title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 | COPY / MOVE   | 리소스 파일 복사 / 이동                                   |
 | LOCK / UNLOCK | 리소스와 파일이 overwrite되는 기능 ON / OFF               |
 
+<br>
 
-
-## 난이도 : 하
+### 시나리오 - 난이도 : 하
 
 <img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211014014739763.png" alt="image-20211014014739763" style="zoom:67%;" />
+
+<br>
 
 ### /webdav/
 
 [WebDAV] 클릭 시 목록 확인 가능
 
 <img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/C%3A/Users/wjddj/EONION-TH3DB.github.io/imgimage-20211027015132130.png" alt="image-20211027015132130" style="zoom:80%;" />
+
+<br>
 
 ### WebDav 사용 여부
 
@@ -61,6 +71,8 @@ title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 - msf6 auxiliary(scanner/http/webdav_scanner) > set path /webdav/ - 디렉토리 지정
 - msf6 auxiliary(scanner/http/webdav_scanner) > exploit 
 
+<br>
+
 ### 허용하는  HTTP Method 확인
 
 <img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211015011438494.png" alt="image-20211015011438494" style="zoom: 62%;" />
@@ -68,9 +80,13 @@ title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 - kali > curl -X OPTIONS http://비박스IP/webdav/ -i
 - /webdav/ 디렉토리에서 사용가능한 메소드 거의 대부분이라는 것 확인
 
+<br>
 
+<br>
 
 ## BurpSuite
+
+### BurpSuite - 1
 
 BurpSuit를 통해 /webdav/에 임의의 파일 업로드 해보자(PUT 메서드 사용)
 
@@ -78,7 +94,9 @@ BurpSuit를 통해 /webdav/에 임의의 파일 업로드 해보자(PUT 메서�
 
 - /webdav/ 페이지 패킷 잡음
 
-### BurpSuite - 1
+<br>
+
+### BurpSuite - 2
 
 GET -> PUT으로 변경
 
@@ -86,7 +104,9 @@ GET -> PUT으로 변경
 
 - 내용 "<h1>Eonion</h1>"인 파일 업로드하기 위해 intecept off
 
-### BurpSuite - 2
+<br>
+
+### BurpSuite - 3
 
 <img src="image-20211027204231898.png" alt="image-20211027204231898" style="zoom:78%;" />
 
@@ -96,7 +116,9 @@ GET -> PUT으로 변경
 
 - PUT 메서드를 통해 웹 서버에 파일 업로드 가능
 
+<br>
 
+<br>
 
 ## Kali
 
@@ -110,13 +132,17 @@ GET -> PUT으로 변경
 - Kali >  cadaver http://비박스IP/webdav/ - 'Webdav' 클라이언트인 'cadaver' 사용
 - dav:/webdav/ > put 'PHP Shell.php' 
 
+<br>
+
 ### Kali - 2
 
 <img src="image-20211027203850950.png" alt="image-20211027203850950" style="zoom:80%;" />
 
 - 웹 쉘을 통해 서버에 명령 수행 가능
 
+<br>
 
+<br>
 
 ## 대응방안 
 
@@ -151,15 +177,15 @@ GET -> PUT으로 변경
 - bee-box > htpasswd -c [패스워드 파일] [생성 계정]
 - bee-box > /etc/init.d/apache2 restart - 웹 서버 재시작
 
+<br>
 
-
-## 확인 
-
-### cadaver
+### 확인 - cadaver
 
 <img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211015025027061.png" alt="image-20211015025027061" style="zoom:92%;" />
 
 - cadaver 명령어로 위와 똑같이 접속 시 계정 정보 요구
+
+<br>
 
 ### curl
 
