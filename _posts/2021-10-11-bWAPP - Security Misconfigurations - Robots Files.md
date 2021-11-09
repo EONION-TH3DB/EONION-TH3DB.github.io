@@ -23,7 +23,7 @@ title: "[bWAPP] 6. Security Misconfigurations - Robots File"
 
 <br>
 
-## robots.txt
+### robots.txt
 
 - 페이지에 대한 접근 권한을 설정하는 파일, 웹 크롤러의 접근 범위 설정 가능
 
