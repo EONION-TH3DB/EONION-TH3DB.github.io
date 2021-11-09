@@ -98,7 +98,7 @@ GET 메소드를 사용하는 웹 페이지(bWAPP - Directories)의 특성을 �
 
 ### Beebox - 2
 
-![image-20211028203156014](image-20211028203156014.png)
+![image-20211028203156014](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211028203156014.png)
 
 - 난이도 확인
 
