@@ -78,7 +78,7 @@ title: "[bWAPP] 4. Insecrue Direct Object References - Reset Secret"
 
 ### BeeBox - 1
 
-![image-20211029235608655](image-20211029235608655.png)
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211029235608655.png" alt="image-20211029235608655" style="zoom:105%;" />
 
 ![image-20211029235720767](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211029235720767.png)
 
