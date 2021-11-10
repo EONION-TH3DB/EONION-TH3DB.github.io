@@ -5,7 +5,7 @@ main:
   - title: "Introduce"
     url: /about/
   - title: "bWAPP"
-    url: /bWAPP/
+    url: https://eonion-th3db.github.io/categories/bWAPP/
   - title: "Reversing"
     url: /reversing/
   - title: "정보처리기사"
@@ -13,6 +13,6 @@ main:
   - title: "기업분석"
     url: /analyze/
   - title: "Category"
-    url: "/categories/"
+    url: https://eonion-th3db.github.io/categories/
   - title: "Tags"
     url: /tags/
