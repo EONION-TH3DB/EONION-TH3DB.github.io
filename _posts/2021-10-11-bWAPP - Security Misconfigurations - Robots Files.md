@@ -1,5 +1,6 @@
 ---
 title: "[bWAPP] 6. Security Misconfigurations - Robots File"
+categories: bWAPP
 ---
 
 <br>
