@@ -1,5 +1,5 @@
 ---
-title: "[Dreamhack] War Game 1단계 - Pwnable basic_explotation_001"
+title: "[Dreamhack] War Game 1단계 - Pwnable basic_exploitation_001"
 ---
 
 <br>
