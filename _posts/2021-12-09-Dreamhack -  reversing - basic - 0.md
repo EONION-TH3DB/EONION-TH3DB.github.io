@@ -9,7 +9,9 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 ![image-20211211000517814](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211000517814.png)
 
+<br>
 
+<br>
 
 ## 프로그램
 
@@ -18,7 +20,9 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 - 문자열 입력하는 프로그램
 - 입력시 correct나 wrong 출력
 
+<br>
 
+<br>
 
 ## 패킹
 
@@ -26,7 +30,9 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 - 패킹 되어 있지 않음
 
+<br>
 
+<br>
 
 ## x64dbg
 
@@ -34,7 +40,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 ![image-20211211001427613](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211001427613.png)
 
-
+<br>
 
 ### 실행(R)
 
@@ -42,7 +48,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 - 아직 input 입력칸 나오지 않음
 
-
+<br>
 
 ### 실행(R)
 
@@ -51,7 +57,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 - 입력칸 등장
 - 실행을 한 번 눌렀을 때 멈췄던 주소인 7FF7612E1564 부터 한단계씩(건너서 단계진행 버튼) 진행해보자
 
-
+<br>
 
 ### 건너서 단계진행(O)
 
@@ -61,7 +67,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 - BreakPoint로 잡고 처음부터 실행하고
 - 안으로 들어가보자
 
-
+<br>
 
 ### 안으로 단계진행(I)
 
@@ -75,7 +81,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 - CALL 되는 구간이 어떤 기능을 하는지 한단계씩 진행하여 파악해보자
 
-
+<br>
 
 ### 건너서 단계진행(O)
 
@@ -86,7 +92,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 - 3번은 위에도 추정했다싶이 입력된 값과 correct 문자열을 cmpare하는 곳으로 판단된다.
 - 3번으로 들어가보자
 
-
+<br>
 
 ### 안으로 단계진행(I)
 
@@ -105,7 +111,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
   - rcx는 우리가 입력한 문자열 값이다.
 - 이 둘을 비교하면 되기 때문에 정답은 'Compr3_the_str1ng' 이다.
 
-
+<br>
 
 ### 결론
 

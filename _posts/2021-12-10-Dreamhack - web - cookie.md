@@ -9,13 +9,13 @@ title: "[Dreamhack] War Game 1단계 - Web cookie"
 
 ![image-20211211191306786](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211191306786.png)
 
-
+<br>
 
 ### 접속 정보의 URL
 
 ![image-20211211192935834](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211192935834.png)
 
-
+<br>
 
 ### 다운로드 코드
 
@@ -27,7 +27,7 @@ title: "[Dreamhack] War Game 1단계 - Web cookie"
 - 쿠키값이 admin일 때는 FLAG 값을 출력하는 것 확인
 - 그렇다면 guest 계정 정보를 알아낸 후 guest 계정에서 쿠키값을 admin으로 바꾸보자
 
-
+<br>
 
 ### 개발자모드
 
@@ -35,7 +35,7 @@ title: "[Dreamhack] War Game 1단계 - Web cookie"
 
 - 기본 계정의 정보 파악
 
-
+<br>
 
 ### 로그인
 
@@ -43,7 +43,7 @@ title: "[Dreamhack] War Game 1단계 - Web cookie"
 
 - guest로 로그인시 출력되는 메시지와 쿠키값 확인
 
-
+<br>
 
 ### 쿠키값 수정
 

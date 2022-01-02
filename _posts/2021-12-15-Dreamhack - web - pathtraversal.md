@@ -8,13 +8,17 @@ title: "[Dreamhack] War Game 1단계 - Web PathTraversal"
 
 ![image-20211215225552154](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215225552154.png)
 
+<br>
 
+<br>
 
 ## 접속 정보
 
 ![image-20211215225620314](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215225620314.png)
 
+<br>
 
+<br>
 
 ## 문제 파일 코드
 
@@ -22,9 +26,13 @@ title: "[Dreamhack] War Game 1단계 - Web PathTraversal"
 
 - 사용자 계정 guest와 admin 확인
 
+<br>
+
 <img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216224715934.png" alt="image-20211216224715934" style="zoom:99%;" />
 
 - POST 방식으로 /api/user/{userid}를 요청하는 것 확인
+
+<br>
 
 <img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216224741224.png" alt="image-20211216224741224" style="zoom:98%;" />
 
@@ -41,13 +49,17 @@ title: "[Dreamhack] War Game 1단계 - Web PathTraversal"
 
   - 상위 경로를 나타내는 명령어 ../를 활용해 ../flag로 입력을 해보자
 
+<br>
 
+<br>
 
 ## Get User Info
 
 ![image-20211215225648005](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215225648005.png)
 
+<br>
 
+<br>
 
 ## guest - View
 
@@ -55,7 +67,9 @@ title: "[Dreamhack] War Game 1단계 - Web PathTraversal"
 
 - 코드에서 봤던 users에 기재되어있던 문자열들이 출력되는 것 확인
 
+<br>
 
+<br>
 
 ## admin - View
 
@@ -66,7 +80,9 @@ title: "[Dreamhack] War Game 1단계 - Web PathTraversal"
 - POST 방식으로 바디부분에 고정된 값을 정의했다고 추측가능
 - BurpSuite를 이용해 어떤 값들이 POST 값으로 전달되는지 확인해보자
 
+<br>
 
+<br>
 
 ## BurpSuite
 
@@ -74,9 +90,13 @@ title: "[Dreamhack] War Game 1단계 - Web PathTraversal"
 
 - 패킷을 가로채 보니 userid에 guest 값이 아닌 0으로 요청되는 것 확인
 
+<br>
+
 ![image-20211216230343204](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216230343204.png)
 
 - admin으로 패킷을 가로채 봤더니 userid에 admin이 아닌 1로 요청
+
+<br>
 
 ![image-20211216230457651](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216230457651.png)
 
@@ -85,15 +105,21 @@ title: "[Dreamhack] War Game 1단계 - Web PathTraversal"
 - 결과적으로 Path Traversal 공격에 사용할 공격 백터는 userid로 판단할 수 있기에
 - userid에 ../flag를 수정해서 패킷을 넘겨보자
 
+<br>
+
 ![image-20211216230956399](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216230956399.png)
 
 - 패킷을 넘기기위해 intercept in on을 눌러 intercept off로 바꿔주자
+
+<br>
 
 ![image-20211216231046448](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216231046448.png)
 
 - 성공
 
+<br>
 
+<br>
 
 ## 결과
 

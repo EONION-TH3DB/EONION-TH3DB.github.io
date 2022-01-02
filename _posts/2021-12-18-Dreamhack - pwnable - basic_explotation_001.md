@@ -12,7 +12,9 @@ title: "[Dreamhack] War Game 1단계 - Pwnable basic_exploitation_001"
 - 메모리 보호 기법 중 NX 기법 적용된 것 확인
   - 쉘 코드는 불가능할 것으로 판단
 
+<br>
 
+<br>
 
 ## 소스 코드
 
@@ -25,7 +27,9 @@ title: "[Dreamhack] War Game 1단계 - Pwnable basic_exploitation_001"
   - buf의 크기가 할당 되었으니 Stack BufferOverFlow로 접근해보자
   - 나머지 buf(128byte)와 sfp(4byte)는 특정 값으로 채워주고 ret으로 read_flag 함수의 주소 값을 반환하는 payload를 작성하자
 
+<br>
 
+<br>
 
 ## 스택 프레임
 
@@ -39,6 +43,8 @@ title: "[Dreamhack] War Game 1단계 - Pwnable basic_exploitation_001"
 
 - 문제 소스 코드에서 0x80(128/10진수)byte로 할당받음
 
+<br>
+
 ### sfp
 
 스택 베이스값
@@ -46,6 +52,8 @@ title: "[Dreamhack] War Game 1단계 - Pwnable basic_exploitation_001"
 스택 주소값을 계산할 때 현재 스택값의 기준을 잡을 때 필요한 프레임 포인터 갑을 저장
 
 ebp 레지스터는 한 개이기 때문에 함수가 시작할 때마다 ebp 값이 바뀌는데 그 전의 ebp 값을 스택에다가 저장해야 하기 때문에 sfp 값이 필요
+
+<br>
 
 ### ret 
 
@@ -58,13 +66,17 @@ ret 부분을 원하는 명령이 있는 주소로 덮어쓴다면 원하는 명
 - 문제 소스코드에서 flag 값을 얻기위해 read_flag 값의 주소를 ret 부분에 덮어줄거다.
 - 나머지 buf(128byte)와 sfp(4byte)는 특정 값으로 채워주고 ret으로 read_flag 함수의 주소 값을 반환하는 payload를 작성하자
 
+<br>
 
+<br>
 
 ## Buffer OverFlow(BOF)
 
 ### buffer 
 
 데이터가 한 곳에서 다른 곳으로 이동할 때 일시적으로 보관되는 임시 기억공간
+
+<br>
 
 ### BufferOverflow
 
@@ -73,10 +85,14 @@ ret 부분을 원하는 명령이 있는 주소로 덮어쓴다면 원하는 명
   - 이는 악성코드의 실행이 가능하게하며
   - 쉘을 띄울 수 있는 상황까지 도래
 
+<br>
+
 ### 종류
 
 - Stack BufferOverflow
 - Heap BufferOverflow
+
+<br>
 
 ### BOF 유발 함수
 
@@ -86,11 +102,15 @@ ret 부분을 원하는 명령이 있는 주소로 덮어쓴다면 원하는 명
 - strcpy() : 대표적으로 많이 접하는 BOF에 취약한 함수
 - sprintf() : 버퍼로 사용될 변수로 출력되는 점에서 BOF에 취약
 
+<br>
+
 ### 참조(References)
 
 https://blog.naver.com/PostView.naver?blogId=jsky10503&logNo=221202679698&parentCategoryNo=&categoryNo=113&viewDate=&isShowPopularPosts=false&from=postView
 
+<br>
 
+<br>
 
 ## Kali
 
@@ -101,13 +121,17 @@ https://blog.naver.com/PostView.naver?blogId=jsky10503&logNo=221202679698&parent
 - gdb 이용해서 read_flag 주소를 알아내자	
 - 이제 위에서 언급한 페이로드 코드를 작성해보자
 
+<br>
 
+<br>
 
 ## Payload
 
 ![image-20211219180804827](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211219180804827.png)
 
+<br>
 
+<br>
 
 ## 결과
 

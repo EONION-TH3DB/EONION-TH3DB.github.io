@@ -10,13 +10,17 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #1"
 
 ![image-20211215210727784](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215210727784.png)
 
+<br>
 
+<br>
 
 ## 프로그램
 
 ![image-20211215210814636](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215210814636.png)
 
+<br>
 
+<br>
 
 ## 패킹
 
@@ -25,13 +29,17 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #1"
 - C++로 패킹 확인
 - 언패킹 과정 필요없다 판단
 
+<br>
 
+<br>
 
 ## X64dbg
 
 ![image-20211215211047030](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215211047030.png)
 
+<br>
 
+<br>
 
 ## 실행(R)
 
@@ -40,7 +48,9 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #1"
 - 여기서 멈춤
 - 한 번 더 실행
 
+<br>
 
+<br>
 
 ## 실행(R)
 
@@ -50,7 +60,9 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #1"
 - 다시 처음으로 돌아가서 실행을 한 번하고 
 - 멈춘 곳에서 '건너서 단계진행(O)'으로 정확히 어디부분에서 문자열 입력할 수 있는 'Input : '이 등장하는지 살펴보자
 
+<br>
 
+<br>
 
 ## 건너서 단계진행(O)
 
@@ -59,7 +71,9 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #1"
 - 화살표 가르킨 call 함수로 호출하는 부분에서 'Input : '이 등장
 - 이 부분에서 '안으로 단계진행(I)'으로 해당 호출 주소로 들어가보자
 
+<br>
 
+<br>
 
 ## 안으로 단계진행(I)
 
@@ -75,7 +89,9 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #1"
   - test eax, eax는 eax 값이 0인지 확인하는 함수
 - eax 값이 1로 반환하기 위해서는 eax가 마지막으로 쓰인 3번째 call 함수로 들어가서 확인해보자
 
+<br>
 
+<br>
 
 ## 안으로 단계진행(I)
 
@@ -100,7 +116,9 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #1"
 - 그러므로 우리가 찾는 문자열은 위 코드의 문자들을 종합한
   - 'Compar3-the-ch4ract3r' 이다.
 
+<br>
 
+<br>
 
 ## 정답
 
