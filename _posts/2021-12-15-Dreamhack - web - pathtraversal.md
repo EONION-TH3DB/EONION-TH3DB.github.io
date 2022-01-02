@@ -6,27 +6,27 @@ title: "[Dreamhack] War Game 1단계 - Web PathTraversal"
 
 ## 문제
 
-![image-20211215225552154](image-20211215225552154.png)
+![image-20211215225552154](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215225552154.png)
 
 
 
 ## 접속 정보
 
-![image-20211215225620314](image-20211215225620314.png)
+![image-20211215225620314](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215225620314.png)
 
 
 
 ## 문제 파일 코드
 
-![image-20211216224629916](image-20211216224629916.png)
+![image-20211216224629916](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216224629916.png)
 
 - 사용자 계정 guest와 admin 확인
 
-<img src="image-20211216224715934.png" alt="image-20211216224715934" style="zoom:99%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216224715934.png" alt="image-20211216224715934" style="zoom:99%;" />
 
 - POST 방식으로 /api/user/{userid}를 요청하는 것 확인
 
-<img src="image-20211216224741224.png" alt="image-20211216224741224" style="zoom:98%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216224741224.png" alt="image-20211216224741224" style="zoom:98%;" />
 
 - @app.route 에서 @는 장식자를 나타내는데
 
@@ -45,13 +45,13 @@ title: "[Dreamhack] War Game 1단계 - Web PathTraversal"
 
 ## Get User Info
 
-![image-20211215225648005](image-20211215225648005.png)
+![image-20211215225648005](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215225648005.png)
 
 
 
 ## guest - View
 
-![image-20211216225547950](image-20211216225547950.png)
+![image-20211216225547950](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216225547950.png)
 
 - 코드에서 봤던 users에 기재되어있던 문자열들이 출력되는 것 확인
 
@@ -59,7 +59,7 @@ title: "[Dreamhack] War Game 1단계 - Web PathTraversal"
 
 ## admin - View
 
-![image-20211216225640756](image-20211216225640756.png)
+![image-20211216225640756](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216225640756.png)
 
 - admin 으로 View를 하니 출력된 문자열은 users에 있던 admin 내용이지만 
 - userid에는 guest로 고정되어있는 것을 확인
@@ -70,26 +70,26 @@ title: "[Dreamhack] War Game 1단계 - Web PathTraversal"
 
 ## BurpSuite
 
-![image-20211216230058474](image-20211216230058474.png)
+![image-20211216230058474](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216230058474.png)
 
 - 패킷을 가로채 보니 userid에 guest 값이 아닌 0으로 요청되는 것 확인
 
-![image-20211216230343204](image-20211216230343204.png)
+![image-20211216230343204](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216230343204.png)
 
 - admin으로 패킷을 가로채 봤더니 userid에 admin이 아닌 1로 요청
 
-![image-20211216230457651](image-20211216230457651.png)
+![image-20211216230457651](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216230457651.png)
 
 - 이번에는 eonion을 입력하여 패킷을 가로채봤더니 userid에 undefined라는 값으로 요청되는 것을 확인했다.
 - 즉, 웹상에서 입력을 통해 요청을 해도 다른 값으로 고정되어 조정된 요청값이 출력된다.
 - 결과적으로 Path Traversal 공격에 사용할 공격 백터는 userid로 판단할 수 있기에
 - userid에 ../flag를 수정해서 패킷을 넘겨보자
 
-![image-20211216230956399](image-20211216230956399.png)
+![image-20211216230956399](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216230956399.png)
 
 - 패킷을 넘기기위해 intercept in on을 눌러 intercept off로 바꿔주자
 
-![image-20211216231046448](image-20211216231046448.png)
+![image-20211216231046448](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211216231046448.png)
 
 - 성공
 

@@ -7,7 +7,7 @@ title: "[Dreamhack] War Game 1단계 - Pwnable basic_exploitation_001"
 
 ## 문제
 
-![image-20211219161320754](image-20211219161320754.png)
+![image-20211219161320754](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211219161320754.png)
 
 - 메모리 보호 기법 중 NX 기법 적용된 것 확인
   - 쉘 코드는 불가능할 것으로 판단
@@ -16,7 +16,7 @@ title: "[Dreamhack] War Game 1단계 - Pwnable basic_exploitation_001"
 
 ## 소스 코드
 
-![image-20211219161405039](image-20211219161405039.png)
+![image-20211219161405039](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211219161405039.png)
 
 - initialize 함수 : 실행 이후 정해진 시간 초과시 alarm_handler 함수에 의해  "TIME OUT" 문자열 출력 후 종료 
 - read_flag 함수 : system 명령어로 flag 값 보여줌
@@ -29,7 +29,7 @@ title: "[Dreamhack] War Game 1단계 - Pwnable basic_exploitation_001"
 
 ## 스택 프레임
 
-![image-20211219170341761](image-20211219170341761.png)
+![image-20211219170341761](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211219170341761.png)
 
 ### buffer
 
@@ -96,7 +96,7 @@ https://blog.naver.com/PostView.naver?blogId=jsky10503&logNo=221202679698&parent
 
 ### gdb
 
-![image-20211219172532717](image-20211219172532717.png)
+![image-20211219172532717](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211219172532717.png)
 
 - gdb 이용해서 read_flag 주소를 알아내자	
 - 이제 위에서 언급한 페이로드 코드를 작성해보자
@@ -105,10 +105,10 @@ https://blog.naver.com/PostView.naver?blogId=jsky10503&logNo=221202679698&parent
 
 ## Payload
 
-![image-20211219180804827](image-20211219180804827.png)
+![image-20211219180804827](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211219180804827.png)
 
 
 
 ## 결과
 
-![image-20211219180717380](image-20211219180717380.png)
+![image-20211219180717380](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211219180717380.png)

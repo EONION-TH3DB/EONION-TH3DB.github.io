@@ -7,19 +7,19 @@ title: "[Dreamhack] War Game 1단계 - Web cookie"
 
 ## 문제
 
-![image-20211211191306786](image-20211211191306786.png)
+![image-20211211191306786](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211191306786.png)
 
 
 
 ### 접속 정보의 URL
 
-![image-20211211192935834](image-20211211192935834.png)
+![image-20211211192935834](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211192935834.png)
 
 
 
 ### 다운로드 코드
 
-![image-20211211192321001](image-20211211192321001.png)
+![image-20211211192321001](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211192321001.png)
 
 - 사용자는 guest와 admin이라는 것을 확인
 - username인 사용자로 쿠키 값을 생성하는 것 확인
@@ -31,7 +31,7 @@ title: "[Dreamhack] War Game 1단계 - Web cookie"
 
 ### 개발자모드
 
-![image-20211211193055771](image-20211211193055771.png)
+![image-20211211193055771](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211193055771.png)
 
 - 기본 계정의 정보 파악
 
@@ -39,7 +39,7 @@ title: "[Dreamhack] War Game 1단계 - Web cookie"
 
 ### 로그인
 
-![image-20211211193208495](image-20211211193208495.png)
+![image-20211211193208495](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211193208495.png)
 
 - guest로 로그인시 출력되는 메시지와 쿠키값 확인
 
@@ -47,7 +47,7 @@ title: "[Dreamhack] War Game 1단계 - Web cookie"
 
 ### 쿠키값 수정
 
-![image-20211211193300064](image-20211211193300064.png)
+![image-20211211193300064](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211193300064.png)
 
 - FLAG 값 획득
 

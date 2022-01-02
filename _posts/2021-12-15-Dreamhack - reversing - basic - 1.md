@@ -8,19 +8,19 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #1"
 
 ## 문제
 
-![image-20211215210727784](image-20211215210727784.png)
+![image-20211215210727784](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215210727784.png)
 
 
 
 ## 프로그램
 
-![image-20211215210814636](image-20211215210814636.png)
+![image-20211215210814636](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215210814636.png)
 
 
 
 ## 패킹
 
-![image-20211215210916397](image-20211215210916397.png)
+![image-20211215210916397](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215210916397.png)
 
 - C++로 패킹 확인
 - 언패킹 과정 필요없다 판단
@@ -29,13 +29,13 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #1"
 
 ## X64dbg
 
-![image-20211215211047030](image-20211215211047030.png)
+![image-20211215211047030](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215211047030.png)
 
 
 
 ## 실행(R)
 
-![image-20211215211146995](image-20211215211146995.png)
+![image-20211215211146995](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215211146995.png)
 
 - 여기서 멈춤
 - 한 번 더 실행
@@ -44,7 +44,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #1"
 
 ## 실행(R)
 
-![image-20211215211257496](image-20211215211257496.png)
+![image-20211215211257496](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215211257496.png)
 
 - 프로그램 실행했을 때 처럼 문자열 입력할 수 있게 'Input : ' 등장
 - 다시 처음으로 돌아가서 실행을 한 번하고 
@@ -54,7 +54,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #1"
 
 ## 건너서 단계진행(O)
 
-![image-20211215211659655](image-20211215211659655.png)
+![image-20211215211659655](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215211659655.png)
 
 - 화살표 가르킨 call 함수로 호출하는 부분에서 'Input : '이 등장
 - 이 부분에서 '안으로 단계진행(I)'으로 해당 호출 주소로 들어가보자
@@ -63,7 +63,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #1"
 
 ## 안으로 단계진행(I)
 
-![image-20211215212112313](image-20211215212112313.png)
+![image-20211215212112313](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215212112313.png)
 
 - 안으로 들어와 본 결과
 - 4번에서 문자열이 맞다면 Correct / 다르다면 Wrong 문자열을 출력하는 분기점을 발견할 수 있다.
@@ -79,11 +79,11 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #1"
 
 ## 안으로 단계진행(I)
 
-![image-20211215212805362](image-20211215212805362.png)
+![image-20211215212805362](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215212805362.png)
 
 - 3번째 call 함수에서 호출하는 부분이다.
 
-![image-20211215213446439](image-20211215213446439.png)
+![image-20211215213446439](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211215213446439.png)
 
 - 같은 함수 패턴으로 반복되는 구문이다.
 - 먼저 코드를 분석해보자
