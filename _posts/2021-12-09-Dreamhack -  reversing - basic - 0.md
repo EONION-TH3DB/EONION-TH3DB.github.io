@@ -7,13 +7,13 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 ## 문제
 
-![image-20211211000517814](image-20211211000517814.png)
+![image-20211211000517814](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211000517814.png)
 
 
 
 ## 프로그램
 
-![image-20211211000839564](image-20211211000839564.png)
+![image-20211211000839564](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211000839564.png)
 
 - 문자열 입력하는 프로그램
 - 입력시 correct나 wrong 출력
@@ -22,7 +22,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 ## 패킹
 
-![image-20211211001016290](image-20211211001016290.png)
+![image-20211211001016290](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211001016290.png)
 
 - 패킹 되어 있지 않음
 
@@ -32,13 +32,13 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 ### OEP
 
-![image-20211211001427613](image-20211211001427613.png)
+![image-20211211001427613](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211001427613.png)
 
 
 
 ### 실행(R)
 
-![image-20211211001448689](image-20211211001448689.png)
+![image-20211211001448689](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211001448689.png)
 
 - 아직 input 입력칸 나오지 않음
 
@@ -46,7 +46,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 ### 실행(R)
 
-![image-20211211002027483](image-20211211002027483.png)
+![image-20211211002027483](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211002027483.png)
 
 - 입력칸 등장
 - 실행을 한 번 눌렀을 때 멈췄던 주소인 7FF7612E1564 부터 한단계씩(건너서 단계진행 버튼) 진행해보자
@@ -55,7 +55,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 ### 건너서 단계진행(O)
 
-![image-20211211002118442](image-20211211002118442.png)
+![image-20211211002118442](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211002118442.png)
 
 - 7FF7612E14EF 에서 특정 구간 호출후에 Input 입력값 뜨는 것 확인
 - BreakPoint로 잡고 처음부터 실행하고
@@ -65,7 +65,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 ### 안으로 단계진행(I)
 
-![image-20211211002631220](image-20211211002631220.png)
+![image-20211211002631220](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211002631220.png)
 
 - 호출된 집단은 이렇게 생김
 - 분기점을 발견할 수 있는데 eax가 0인지 아닌지 검사
@@ -79,7 +79,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 ### 건너서 단계진행(O)
 
-![image-20211211003038573](image-20211211003038573.png)
+![image-20211211003038573](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211003038573.png)
 
 - 1번은 Input 값 출력하는 함수
 - 2번은 write 할 수 있게 입력값 저장하는 함수로 추정이 된다
@@ -90,7 +90,7 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 ### 안으로 단계진행(I)
 
-![image-20211211004734549](image-20211211004734549.png)
+![image-20211211004734549](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211004734549.png)
 
 - 여기서 또한 test eax,eax를 통해 eax값이 0인지를 묻는 jne 분기 발견
   - eax가 0이면 rsp+20에 0값이 저장되고
@@ -109,4 +109,4 @@ title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #0"
 
 ### 결론
 
-![image-20211211010146201](image-20211211010146201.png)
+![image-20211211010146201](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211211010146201.png)
