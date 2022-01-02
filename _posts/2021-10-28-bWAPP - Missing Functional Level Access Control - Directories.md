@@ -122,5 +122,5 @@ GET 메소드를 사용하는 웹 페이지(bWAPP - Directories)의 특성을 �
 <img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211028204600823.png" alt="image-20211028204600823" style="zoom:77%;" />
 
 - vi functions_external.php로 확인
-- "directory_travesal_check_2"에서 상대경로를 통한 접근을 막기 위해 해당 특수문자를 검열하고 그를 통해 감지되었다는 메시지 출력
+- "directory_traversal_check_2"에서 상대경로를 통한 접근을 막기 위해 해당 특수문자를 검열하고 그를 통해 감지되었다는 메시지 출력
 - directory_traversal_check_3 에서 realpath 함수 호출하여 상대경로를 절대경로로 반환 후, strpos 함수로 사용자가 입력한 경로가 기본 경로에 포함되는지 확인 후 오류 메시지 출력
