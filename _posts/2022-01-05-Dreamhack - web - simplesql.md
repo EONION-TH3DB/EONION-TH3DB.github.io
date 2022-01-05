@@ -13,7 +13,7 @@ title: "[Dreamhack] War Game 1단계 - Web Simple_SQLI"
 
 ## 웹 페이지
 
-<img src="image-20220105194620180.png" alt="image-20220105194620180" style="zoom:120%;" />
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220105195103715.png" alt="image-20220105195103715" style="zoom:120%;" />
 
 - SQL Injection 중 sqli에 관한 문제
 
