@@ -1,6 +1,5 @@
 ---
-title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #2"
-
+title: "[Dreamhack] War Game 1단계 - Reversing Basic Challenge #3"
 ---
 
 <br>
