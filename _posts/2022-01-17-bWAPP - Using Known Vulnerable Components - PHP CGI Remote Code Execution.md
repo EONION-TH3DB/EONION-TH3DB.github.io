@@ -100,7 +100,7 @@ PHP CGI 취약점을 이용한 원격코드를 사용하여 소스 코드와 노
 
 ### 수정
 
-![image-20220117221909173](image-20220117221909173.png)
+![image-20220122021430583](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220122021430583.png)
 
 - Forward 버튼 클릭
 
