@@ -1,6 +1,5 @@
 ---
-x`title: "[bWAPP] 1. Injection - SQL Injection - (Login Form/Hero)"
-
+title: "[bWAPP] 1. Injection - SQL Injection - (Login Form/Hero)"
 ---
 
 <br>
