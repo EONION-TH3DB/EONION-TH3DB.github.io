@@ -181,8 +181,6 @@ SQL Injection을 이용해 개인정보를 탈취해보자.
 
 `http://172.30.1.25/bWAPP/sqli_2.php?movie=1 or 1=1 #%20&action=go`
 
-- GET 방식의 헤더(url 포함)이나 POST 방식의 바디에 포함시켜 진행해야할 때는 따옴표를 생략해주고 변수 값은 항상 0으로 지정한다.
-
 - 지금부터는 GET/Search와 동일하나 Select 특성 상 하나만 조회가 되므로
 
 - limit 함수를 끝에 붙여 limit 0,1 ~limit 5,1 이런식으로 조회해보자

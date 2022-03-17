@@ -81,7 +81,7 @@ Blind SQL Injection으로 쿼리 결과의 참/거짓을 통해 DB 값 유출해
 
 - substring 명령어를 통해 database의 첫번쨰 위치의 길이 1값이 a가 맞는지 확인한다.
 
-```
+```sql
 SUBSTR(str, pos, len)
 ```
 
