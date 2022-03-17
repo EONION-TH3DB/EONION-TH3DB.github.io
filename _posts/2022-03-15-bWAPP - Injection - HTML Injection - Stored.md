@@ -77,7 +77,7 @@ inline frame으로서 해당 웹 페이지 안에 어떠한 제한 없이 또 �
 
 <br>
 
-![image-20220316010302249](image-20220316010302249.png)
+![image-20220316010302249](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316010302249.png)
 
 - 로그인
 
@@ -95,5 +95,21 @@ inline frame으로서 해당 웹 페이지 안에 어떠한 제한 없이 또 �
 
 ## 대응방안
 
+### Linux
 
+![image-20220317223333716](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317223333716.png)
 
+![image-20220317221054644](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221054644.png)
+
+- vi 편집기로 htmli_stored.php 소스코드 열어준다.
+- 레벨 확인
+- Medium과 High 모두 xss_check3를 사용
+
+<br>
+
+### functions_external.php
+
+![image-20220317221339359](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221339359.png)
+
+- xss_check_3 에서는 htmlspecialchars 함수를 사용하고 있는데 
+- htmlspecialchars 는 메타 문자가 html 태그로 사용되지 않도록 방지하여 입력값 그대로 출력하게 함으로써 취약점에 대응하고 있다.

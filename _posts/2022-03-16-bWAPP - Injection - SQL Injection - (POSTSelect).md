@@ -54,11 +54,11 @@ DB를 비정상적으로 조작하는 코드 인젝션의 대표적인 공격.
 
 ### 진행
 
-![image-20220316191108556](image-20220316191108556.png)
+![image-20220316191108556](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316191108556.png)
 
 - DB정보 알아내고
 
-![image-20220316191249018](image-20220316191249018.png)
+![image-20220316191249018](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316191249018.png)
 
 - 알아낸 DB의 테이블 정보 조희
 
@@ -85,9 +85,19 @@ DB를 비정상적으로 조작하는 코드 인젝션의 대표적인 공격.
 
 ## 대응방안
 
+### Linux
 
+![image-20220318010939684](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318010939684.png)
 
+![image-20220318002653266](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318002653266.png)
 
+- vi 편집기로 sqli_13.php 소스코드 열어준다.
+- medium에서만 sqli_check_2 함수로 보안 적용
 
+<br>
 
+### functions_external.php
 
+![image-20220318011033586](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318011033586.png)
+
+- mysql_real_escape_string : PHP에서 SQL Injection 공격 등을 방어하기 위하여 특수 문자열을 이스케이프 하기 위한 함수

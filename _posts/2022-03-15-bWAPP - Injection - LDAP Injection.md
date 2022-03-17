@@ -45,3 +45,9 @@ Lightweight Directory Access Protocol
 <Br>
 
 ### 대응방안
+
+### Linux
+
+![image-20220317224705099](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317224705099.png)
+
+- 따로 보안적용이 되어 있지 않다.

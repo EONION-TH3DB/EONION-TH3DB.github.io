@@ -107,9 +107,18 @@ MySQL이나 PostgreSQL과 같은 DBMS지만,
 
 ## 대응방안
 
+### Linux
 
+![image-20220318001547842](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318001547842.png)
 
+- vi 편집기로 sqli_11.php 소스코드 열어준다.
+- Level 1, 2 = Medium, High 에서 sqli_check_4 함수 사용
 
+<br>
 
+### functions_external.php
 
+![image-20220318001942380](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318001942380.png)
 
+- 홀로있는 작은 따옴표를 두개의 작은 따옴표로 대체해준다. 
+- 작은 따옴표를 열어줌과 동시에 닫아줌으로써 코드가 삽입되더라도 실행되지 못하게 Injection에 대해 방어하고 있다.

@@ -217,7 +217,19 @@ neo' and substring(name(/heroes/hero[1]/id),1,1)='a' or 'a'='b
 
 ##  대응 방안
 
+### Linux
 
+![image-20220318004721601](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318004721601.png)
 
+![image-20220318004752212](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318004752212.png)
 
+- vi 편집기로 xmli_1.php 소스 코드를 열어준다.
+- level 1, 2 = Medium, High 에서 xmli_check_1 함수를 사용하고 있다.
 
+<br>
+
+### functions_external.php
+
+![image-20220318004919513](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318004919513.png)
+
+- 위와 같이 특수문자를 일일이 공백으로 대체해주며 Injection에 대비하고 있다.

@@ -45,7 +45,7 @@ CVE-2014-3704 : Drupal에서 확인된 SQL Injecion 취약점
 
 - Durpal을 눌러보면 
 
-![image-20220316221949013](image-20220316221949013.png)
+![image-20220316221949013](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316221949013.png)
 
 - 이런식으로 접근가능하고 CVE-2014-3704로 이동해보자.
 
@@ -80,10 +80,3 @@ CVE-2014-3704 : Drupal에서 확인된 SQL Injecion 취약점
 ![image-20220316222957171](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316222957171.png)
 
 - 로그인 성공
-
-<br>
-
-<br>
-
-## 대응방안
-

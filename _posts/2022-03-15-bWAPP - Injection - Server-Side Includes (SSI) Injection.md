@@ -69,3 +69,27 @@ SSI 문서에 대해서는 클라이언트 측으로 보내주기 전에 웹서�
 
 ## 대응방안
 
+### Linux
+
+![image-20220317231242158](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317231242158.png)
+
+![image-20220317221054644](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221054644.png)
+
+- vi 편집기로 ssii.php 소스코드 열어준다.
+- 레벨확인
+- Medium : xss_check_4 함수사용
+- High : xss_check_3 함수사용
+
+<br>
+
+### functions_external.php
+
+![image-20220317224046908](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317224046908.png)
+
+![image-20220317221339359](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221339359.png)
+
+- xss_check_4 에서 addslashes 함수 사용
+- addslashes 는 특수 문자(',",/)앞에 역슬래시를 삽입하여 특수문자 기능을 문자로 이스케이프하는 함수 
+  - 하지만 인코딩된 태그나 스크립트가 들어오게 되면 바로 디코딩되기 때문에 보안이 뚫린다.
+- xss_check_3 에서는 htmlspecialchars 함수를 사용하고 있는데 
+- htmlspecialchars 는 메타 문자가 html 태그로 사용되지 않도록 방지하여 입력값 그대로 출력하게 함으로써 취약점에 대응하고 있다.

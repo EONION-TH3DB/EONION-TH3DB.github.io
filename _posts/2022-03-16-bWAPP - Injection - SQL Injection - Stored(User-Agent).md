@@ -116,3 +116,24 @@ HTTP 요청 패킷의 헤더에 포함되는 내용
 
 ## 대응방안
 
+### Linux
+
+![image-20220318003429351](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318003429351.png)
+
+![image-20220318002653266](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318002653266.png)
+
+- vi 편집기로 sqli_17.php 소스코드를 열어준다.
+- level 1 : sqli_check_1 함수 사용
+- level 2 : sqli_check_3 함수 사용
+
+<br>
+
+### functions_external.php
+
+![image-20220318003522652](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318003522652.png)
+
+- addslashes : 특수 문자(',",/) 앞에 역슬래시를 삽입하여 특수문자 기능을 문자로 이스케이프하는 함수
+  - 인코딩된 태그나 스크립트가 들어오면 바로 디코딩되기 때문에 보안 허점 발생
+- mysql_real_escape_string : PHP에서 SQL Injection 공격 등을 방어하기 위하여 특수 문자열을 이스케이프 하기 위한 함수
+  - `\x00, \n, \r, \, ', ", \x1a`와 같은 문자 앞에 `\`(역슬레시)를 붙여서 해당 문자가 실제 작동하지 않도록 이스케이프 해준다.
+  - addslashes 보다 처리할 수 있는 문자들이 더 많음

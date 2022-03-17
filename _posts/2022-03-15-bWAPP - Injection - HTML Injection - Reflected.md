@@ -1,5 +1,5 @@
 ---
-title: "[bWAPP] 1. Injection - HTML Injection - Reflected"
+title: "[bWAPP] 1. Injection - HTML Injection - Reflected - (GET/POST/Current URL)"
 ---
 
 <br>
@@ -78,9 +78,32 @@ title: "[bWAPP] 1. Injection - HTML Injection - Reflected"
 
 <br>
 
+<br>
+
 ## HTML Injection - Reflected(GET) - 대응방안
 
+### 리눅스
 
+![image-20220317220850220](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317220850220.png)
+
+![image-20220317221054644](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221054644.png)
+
+- vi 편집기로 htmli_get.php 소스코드를 열어준다.
+- 레벨 확인
+- medium 에서는 xss_check_1 함수 사용
+- high 에서는 xss_check_3 함수 사용
+
+<br>
+
+### functions_external.php
+
+![image-20220317221324822](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221324822.png)
+
+![image-20220317221339359](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221339359.png)
+
+- xss_check_1 에서 "<", ">" 문자를 "&lt", "&gt"로 대체하고 있다.
+- xss_check_3 에서는 htmlspecialchars 함수를 사용하고 있는데 
+- htmlspecialchars 는 메타 문자가 html 태그로 사용되지 않도록 방지하여 입력값 그대로 출력하게 함으로써 취약점에 대응하고 있다.
 
 <br>
 
@@ -118,9 +141,32 @@ title: "[bWAPP] 1. Injection - HTML Injection - Reflected"
 
 <br>
 
+<br>
+
 ## HTML Injection - Reflected(POST) - 대응방안
 
+### 리눅스
 
+![image-20220317221802965](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221802965.png)
+
+![image-20220317221054644](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221054644.png)
+
+- vi 편집기로 htmli_post.php 소스코드를 열어준다.
+- 레벨 확인
+- medium 에서는 xss_check_1 함수 사용
+- high 에서는 xss_check_3 함수 사용
+
+<br>
+
+### functions_external.php
+
+![image-20220317221324822](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221324822.png)
+
+![image-20220317221339359](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221339359.png)
+
+- xss_check_1 에서 "<", ">" 문자를 "&lt", "&gt"로 대체하고 있다.
+- xss_check_3 에서는 htmlspecialchars 함수를 사용하고 있는데 
+- htmlspecialchars 는 메타 문자가 html 태그로 사용되지 않도록 방지하여 입력값 그대로 출력하게 함으로써 취약점에 대응하고 있다.
 
 <br>
 
@@ -144,7 +190,7 @@ title: "[bWAPP] 1. Injection - HTML Injection - Reflected"
 
 ### BurpSuite
 
-![image-20220316003243104](image-20220316003243104.png)
+![image-20220316003243104](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316003243104.png)
 
 - 패킷을 잡은 후 Host 주소를 변경해보자
 
@@ -166,11 +212,37 @@ title: "[bWAPP] 1. Injection - HTML Injection - Reflected"
 
 두번째 방법 결과
 
-![image-20220316003756355](image-20220316003756355.png)
+![image-20220316003756355](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316003756355.png)
 
 - 현 url 뒤에 쿠키 정보 확인
 
 <br>
 
+<br>
+
 ## HTML Injection - Reflected(Current URL) - 대응방안
 
+### Linux
+
+![image-20220317221954769](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221954769.png)
+
+![image-20220317221054644](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221054644.png)
+
+- vi 편집기로 htmli_current_url.php 소스 코드 열람
+- medium 일때 document.URL을 출력해주고 있는데
+  - php에서 #은 주석으로 처리되지만 뒤에 있는 html 코드는 실행되는 특성을 이용하면 된다.
+
+```html
+http://172.30.1.23/bWAPP/htmli_current_url.php#<h1><script>document.write(document.cookie)</script>
+```
+
+- high 일때 xss_check_3 함수사용
+
+<br>
+
+### functions_external.php
+
+![image-20220317221339359](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317221339359.png)
+
+- xss_check_3 에서는 htmlspecialchars 함수를 사용하고 있는데 
+- htmlspecialchars 는 메타 문자가 html 태그로 사용되지 않도록 방지하여 입력값 그대로 출력하게 함으로써 취약점에 대응하고 있다.

@@ -50,3 +50,11 @@ title: "[bWAPP] 1. Injection - PHP Code Injection"
 
 ## 대응방안
 
+### Linux
+
+![image-20220317230730943](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317230730943.png)
+
+- vi 편집기로 phpi.php 소스코드를 열어주면
+- 레벨 0 = Low 일때는 요청받은 메시지 그대로 출력하고
+- 레벨 1,2 = Medium, High 일 때는 htmlsecialchars 함수를 사용하고있다.
+- htmlspecailchars : 메타문자가 html 태그로 사용되지 않도록 방지하여 그대로 출력하게 하는 함수.

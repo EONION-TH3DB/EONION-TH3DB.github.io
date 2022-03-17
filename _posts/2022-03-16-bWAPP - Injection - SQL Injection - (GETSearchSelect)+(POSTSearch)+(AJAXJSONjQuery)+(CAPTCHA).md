@@ -61,7 +61,7 @@ SQL Injection을 이용해 개인정보를 탈취해보자.
 
 먼저 '작은 따옴표로 SQL 구문 오류가 뜨는지 확인하자
 
-![image-20220316181123544](image-20220316181123544.png)
+![image-20220316181123544](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316181123544.png)
 
 - 구문오류 확인으로 SQL 구문이 쓰이는 것을 확인할 수 있다.
 - `"SELECT column FROM tables WHERE movie= ' " &movie " ' "` 로 이뤄진 것을 유추할 수 있는데
@@ -72,7 +72,7 @@ SQL Injection을 이용해 개인정보를 탈취해보자.
 
 ### 항상 참인 구문
 
-![image-20220316181458498](image-20220316181458498.png)
+![image-20220316181458498](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316181458498.png)
 
 - 먼저 &movie 변수가 들어가기전에 열린 작은 따옴표를 닫아주고
 - OR로 연결하여 둘 중 하나가 참이면 참이되게끔 설정한다.
@@ -89,7 +89,7 @@ SQL Injection을 이용해 개인정보를 탈취해보자.
 - 먼저 현재 DB의 TABLE의 컬럼들의 갯수를 알아야하므로 ' UNION SELECT ALL 1.2.3.... #으로
 - 1부터 갯수가 뜰때까지 반복해준다.
 
-![image-20220316181924807](image-20220316181924807.png)
+![image-20220316181924807](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316181924807.png)
 
 - 컬럼 갯수는 7개
 - Title칸에는 2번 컬럼, Release에는 3번, Character에는 5번, Genre에는 4번 컬럼이 쓰인것을 확인
@@ -142,7 +142,7 @@ SQL Injection을 이용해 개인정보를 탈취해보자.
 
 ### 결과
 
-![image-20220316183935205](image-20220316183935205.png)
+![image-20220316183935205](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316183935205.png)
 
 `0' union select all 1,id,login,password,email,6,7 from users#`
 
@@ -152,8 +152,31 @@ SQL Injection을 이용해 개인정보를 탈취해보자.
 
 <br>
 
+<br>
+
 ## SQL Injection(GET/Search) 대응방안
 
+### Linux
+
+![image-20220318002544545](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318002544545.png)
+
+![image-20220318002653266](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318002653266.png)
+
+- vi 편집기로 sqli_1.php 소스코드를 열어준다.
+- level 1 : sqli_check_1 함수 사용
+- level 2 : sqli_check_2 함수 사용
+
+<br>
+
+### functions_external.php
+
+![image-20220317235926576](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317235926576.png)
+
+- addslashes : 특수 문자(',",/) 앞에 역슬래시를 삽입하여 특수문자 기능을 문자로 이스케이프하는 함수
+  - 인코딩된 태그나 스크립트가 들어오면 바로 디코딩되기 때문에 보안 허점 발생
+- mysql_real_escape_string : PHP에서 SQL Injection 공격 등을 방어하기 위하여 특수 문자열을 이스케이프 하기 위한 함수
+  - `\x00, \n, \r, \, ', ", \x1a`와 같은 문자 앞에 `\`(역슬레시)를 붙여서 해당 문자가 실제 작동하지 않도록 이스케이프 해준다.
+  - addslashes 보다 처리할 수 있는 문자들이 더 많음
 
 
 <br>
@@ -177,7 +200,7 @@ SQL Injection을 이용해 개인정보를 탈취해보자.
 
 ### 항상 참 구문
 
-![image-20220316184533909](image-20220316184533909.png)
+![image-20220316184533909](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316184533909.png)
 
 `http://172.30.1.25/bWAPP/sqli_2.php?movie=1 or 1=1 #%20&action=go`
 
@@ -197,7 +220,19 @@ SQL Injection을 이용해 개인정보를 탈취해보자.
 
 ## SQL Injection(GET/Select) 대응방안
 
+### Linux
 
+![image-20220318000311320](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318000311320.png)
+
+- medium에서만 sqli_check_2 함수로 보안 적용
+
+<br>
+
+### functions_external.php
+
+![image-20220318000520683](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318000520683.png)
+
+- mysql_real_escape_string : PHP에서 SQL Injection 공격 등을 방어하기 위하여 특수 문자열을 이스케이프 하기 위한 함수
 
 <br>
 
@@ -226,6 +261,27 @@ SQL Injection을 이용해 개인정보를 탈취해보자.
 
 ## SQL Injection(POST/Search) 대응방안
 
+### Linux
+
+![image-20220318002544545](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318002544545.png)
+
+![image-20220318002653266](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318002653266.png)
+
+- vi 편집기로 sqli_6.php 소스코드를 열어준다.
+- level 1 : sqli_check_1 함수 사용
+- level 2 : sqli_check_2 함수 사용
+
+<br>
+
+### functions_external.php
+
+![image-20220317235926576](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317235926576.png)
+
+- addslashes : 특수 문자(',",/) 앞에 역슬래시를 삽입하여 특수문자 기능을 문자로 이스케이프하는 함수
+  - 인코딩된 태그나 스크립트가 들어오면 바로 디코딩되기 때문에 보안 허점 발생
+- mysql_real_escape_string : PHP에서 SQL Injection 공격 등을 방어하기 위하여 특수 문자열을 이스케이프 하기 위한 함수
+  - `\x00, \n, \r, \, ', ", \x1a`와 같은 문자 앞에 `\`(역슬레시)를 붙여서 해당 문자가 실제 작동하지 않도록 이스케이프 해준다.
+  - addslashes 보다 처리할 수 있는 문자들이 더 많음
 
 
 <br>
@@ -247,14 +303,6 @@ SQL Injection을 이용해 개인정보를 탈취해보자.
 
 <br>
 
-## SQL Injection (AJAX/JSON/jQuery) 대응방안
-
-
-
-<br>
-
-<br>
-
 ## SQL Injection (CAPTCHA)
 
 ![image-20220316190148138](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316190148138.png)
@@ -264,15 +312,3 @@ SQL Injection을 이용해 개인정보를 탈취해보자.
 ![image-20220316190212430](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220316190212430.png)
 
 - 이런식 이후는 GET/Search와 동일
-
-<br>
-
-<br>
-
-## SQL Injection (CAPTCHA) 대응방안
-
-
-
-<br>
-
-<br>

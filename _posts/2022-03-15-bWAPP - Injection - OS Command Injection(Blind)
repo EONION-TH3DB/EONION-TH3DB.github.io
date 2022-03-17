@@ -74,3 +74,22 @@ Blind SQL Injection으로 쿼리 결과의 참/거짓을 통해 DB 값 유출해
 
 ## 대응방안
 
+### Linux
+
+![image-20220317225533437](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317225533437.png)
+
+- vi 편집기를 통해 commandi.php 소스코드를 열어주면
+- 레벨 1 = Medium 일 때 commandi_check_1 함수를 쓰고
+- 레벨 2 = High 일 때 commindi_check_2 함수를 쓰는 것을 확인할 수 있다.
+
+<br>
+
+### functions_external.php
+
+![image-20220317225732419](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317225732419.png)
+
+- commandi_check_1 에서는 "&", ";" 문자들을 공백으로 대체해주고
+- commnadi_check_2 에서는 escapeshellcmd 함수를 사용하여 보안을 적용하고 있다.
+- escapeshellcmd : 
+  - 인자로 받은 명령어가 실행되었을 때, 의도치 않았던 쉘 명령어가 실행되는 것을 방지하는 함수.
+  - 메타캐릭터에 역슬래쉬를 붙여 명령어를 실행하지 못하게 한다.

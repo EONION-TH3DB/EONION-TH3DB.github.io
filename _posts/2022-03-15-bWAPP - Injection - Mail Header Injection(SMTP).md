@@ -80,3 +80,21 @@ title: "[bWAPP] 1. Injection - Mail Header Injection(SMTP)"
 
 ## 대응방안
 
+### Linux
+
+![image-20220317225020763](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317225020763.png)
+
+- vi 편집기로 maili.php 소스코드를 열어보면
+- High 레벨 일 때만 mail_check_2 함수를 사용한다.
+
+<br>
+
+### functions_external.php
+
+![image-20220317225124474](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317225124474.png)
+
+- 먼저 받은 데이터를 url디코딩 해주고 filter_var 함수로 유효성 검사를 해주고 있다.
+- filter_var('검사할 값', Filter_Validate_Email);
+  - 이 함수의 두번째 아규먼트 값에 따라 검사할 유형이 달라지는 방식
+  - 두 번째 아규먼트 값은 이미 선언된 상수 값이기에 따로 선언할 필요 x
+  - 해당 이메일이 올바르다면 참 값, 올바르지 않다면 거짓값을 반환한다.

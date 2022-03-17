@@ -54,11 +54,11 @@ MySQL이나 PostgreSQL과 같은 DBMS지만,
 
 - 참 거짓을 이용해 앞서 진행했던 길이, 대소문자 구분, 대조 방법을 이용하자
 
-![image-20220317031022040](image-20220317031022040.png)
+![image-20220317031022040](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317031022040.png)
 
 - 참
 
-![image-20220317031056272](image-20220317031056272.png)
+![image-20220317031056272](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317031056272.png)
 
 - 거짓
 
@@ -87,7 +87,7 @@ MySQL이나 PostgreSQL과 같은 DBMS지만,
 
 ### 컬럼 조회
 
-![image-20220317030535569](image-20220317030535569.png)
+![image-20220317030535569](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317030535569.png)
 
 `' or length((select sql from sqlite_master where tbl_name='heroes' limit 0,1))=1 --`
 
@@ -102,7 +102,7 @@ MySQL이나 PostgreSQL과 같은 DBMS지만,
 
 ### 컬럼 속성
 
-![image-20220317030703941](image-20220317030703941.png)
+![image-20220317030703941](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220317030703941.png)
 
 `' or length((select login from heroes limit 0,1))=1 --`
 
@@ -118,3 +118,18 @@ MySQL이나 PostgreSQL과 같은 DBMS지만,
 
 ## 대응방안
 
+### Linux
+
+![image-20220318001547842](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318001547842.png)
+
+- vi 편집기로 sqli_14.php 소스코드 열어준다.
+- Level 1, 2 = Medium, High 에서 sqli_check_4 함수 사용
+
+<br>
+
+### functions_external.php
+
+![image-20220318001942380](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220318001942380.png)
+
+- 홀로있는 작은 따옴표를 두개의 작은 따옴표로 대체해준다. 
+- 작은 따옴표를 열어줌과 동시에 닫아줌으로써 코드가 삽입되더라도 실행되지 못하게 Injection에 대해 방어하고 있다.
