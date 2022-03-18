@@ -1,5 +1,5 @@
 ---
-title: "[bWAPP] 1. Broken Authentication - Logout Management"
+title: "[bWAPP] 2. Broken Authentication - Logout Management"
 ---
 
 <br>

@@ -1,5 +1,5 @@
 ---
-title: "[bWAPP] 1. Broken Authentication - Capcah Bypassing"
+title: "[bWAPP] 2. Broken Authentication - Capcah Bypassing"
 ---
 
 <br>

@@ -1,5 +1,5 @@
 ---
-title: "[bWAPP] 1. Broken Authentication - Weak Passwords"
+title: "[bWAPP] 2. Broken Authentication - Weak Passwords"
 ---
 
 <br>
