@@ -66,10 +66,8 @@ ID, PW를 몰라도 시스템에 접근가능한 공격이며,
 
 - 마찬가지로 취약한 패스워드이다.
 - 버프수트 Brute-Force 방식으로 진행하면 된다.
-  - 참고 1
-  - [bWAPP] 2. Broken Authentication - Capcah Bypassing
-  - 참고 2
-  - [bWAPP] 2. Broken Authentication - Password Attacks
+  - [참고1](https://eonion-th3db.github.io/bWAPP-Broken-Authentication-Capcah-Bypassing/)
+  - [참고2](https://eonion-th3db.github.io/bWAPP-Broken-Authentication-Password-Attacks/)
 
 <br>
 
