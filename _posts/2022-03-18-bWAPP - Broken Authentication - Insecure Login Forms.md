@@ -48,16 +48,6 @@ title: "[bWAPP] 2. Broken Authentication - Insecure Login Forms"
 
 <br>
 
-### Session Hijacking
-
-공격자가 인증 작업 등이 완료되어 정상통신을 하고 있는 다른 사용자의 세션을 가로채 별도의 인증 작업 없이 가로챈 세션으로 통신을 계속하는 행위
-
-ID, PW를 몰라도 시스템에 접근가능한 공격이며,
-
-인증 작업이 완료된 세션을 공격하기 때문에 OTP, Challenge/Response 기법을 사용하는 사용자 인증을 무력화 시킴.
-
-<br>
-
 <br>
 
 ## Insecure Login Forms - 난이도 : 하
