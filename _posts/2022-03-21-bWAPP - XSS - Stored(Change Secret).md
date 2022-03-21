@@ -84,6 +84,20 @@ Stored XSS는 악의적인 스크립트 코드가 웹에 입력되면서 DB에 �
 
 <br>
 
+![image-20220321181701475](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220321181701475.png)
+
+- xss_stored_3.php 페이지에서 변경한 secret은 MySQL의 DB에 저장되므로 secret 변수를 다시 우회한다.
+- mysqli_real_escape_string 함수를 사용해 NULL, \n, \r, \, ', ", ^Z에 백슬래시를 붙여 SQL 인젝션 공격을 방어한다.
+- 또한, htmlspecialchars 함수로 HTML에 사용되는 기호를 UTF-8로 반환하고 HTML 코드에 사용되는 문자들을 HTML 엔티티 코드로 변환한다.
+- 그다음 MySQL의 업데이트 셋 구문을 사용하여 위험 문자가 변환된 secret 변수를 DB에 저장한다.
+- 그렇기에 난이도 중 에서도 아래 구문이 막혔던 것이다.
+
+```html
+<script>alert(document.cookie)</script>
+```
+
+<br>
+
 ### 난이도 : 상
 
 ![image-20220321161652371](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220321161652371.png)
