@@ -30,7 +30,8 @@ ID, PW를 몰라도 시스템에 접근가능한 공격이며,
 
 ![image-20220319193828971](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220319193828971.png)
 
-- HTTPOnly는 Set-Cookie 라는 서버가 클라이언트의 쿠키를 설정하는 php 함수의 옵션인데
+- HTTPOnly는 Set-Cookie 라는 php 함수의 옵션인데
+  - Set-cookie : 서버가 클라이언트의 쿠키를 설정하는 함수
 - XSS 와 같은 공격으로부터 쿠키 탈취를 방지하기 위해, JavaScript의 document.cookie 함수를 사용해 쿠키에 접근하는 것을 못하게 하는 옵션이다.
 
 - 사진에 나와있는 Cookies 버튼과 here 파워링크를 클릭해보고 추가적으로 개발자모드 콘솔에서 document.cookie를 이용해 쿠키값을 출력해보자.
