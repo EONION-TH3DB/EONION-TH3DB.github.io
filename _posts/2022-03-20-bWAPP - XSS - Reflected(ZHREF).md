@@ -116,7 +116,7 @@ a 태그를 사용할 수 있는 속성은 href, title, target 등이 있으며 
 
 <BR>
 
-## Referrences
+## Reference
 
 ![image-20220321173522102](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220321173522102.png)
 

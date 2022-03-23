@@ -93,7 +93,7 @@ http://172.30.1.16/phpmyadmin/error.php?type=Bugged!&error=[a@http://172.30.1.16
 
 <BR>
 
-## Referrences
+## Reference
 
 ![image-20220321173522102](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220321173522102.png)
 
