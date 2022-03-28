@@ -41,6 +41,7 @@ title: "[bWAPP] 10. Unvalidated Redirects & Forwards (1)"
 - intercept is off로 바꿔주면
 
 <br>
+
 ![image-20220328170954242](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220328170954242.png)
 
 - 다음과 같이 리다이렉션 취약점을 활용할 수 있다.
