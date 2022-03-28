@@ -1,5 +1,5 @@
 ---
-title: "[bWAPP] 6. Security Misconfigurations - Insecure WebDAV Configuration"
+title: "[bWAPP] 5. Security Misconfigurations - Insecure WebDAV Configuration"
 ---
 
 <br>
