@@ -82,7 +82,10 @@ title: "[bWAPP] 4. Insecrue Direct Object References - Change Secret"
 
 ![image-20211027224113873](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211027224113873.png)
 
+![image-20220329135847359](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220329135847359.png)
+
 - hidden 폼에 토큰 값 부여해서 수정 시 토큰 유효성 검사
+- 난이도 하와는 달리 난이도 중상에서는 다른 사용자의 정보를 수정하려면 토큰 값도 필요함을 알 수 있다.
 
 <br>
 

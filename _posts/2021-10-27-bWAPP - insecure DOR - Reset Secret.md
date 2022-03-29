@@ -91,6 +91,8 @@ title: "[bWAPP] 4. Insecrue Direct Object References - Reset Secret"
 
 <img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20211030000350317.png" alt="image-20211030000350317" style="zoom:92%;" />
 
+![image-20220329134352433](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220329134352433.png)
+
 - xxe-2.php 페이지는 난이도 중 이상부터 변수에 입력된 값 필터링
 - 난이도 상에서는 로그인 변수에 사용하는 아이디를 세션에서 입력받아 입력하므로 버프스위트로 수정하여도 해당 사용자의 아이디와 비밀번호 초기화 됨
 -  mysqli_real_escape_string : Null, \n, \r, \, ', ", ^Z 문자에 백슬래시를 붙여 SQL Injection 공격 방어
