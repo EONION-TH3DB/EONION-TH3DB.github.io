@@ -4,7 +4,7 @@ title: "[CodeEngn] Basic RCE L02"
 
 <br>
 
-## L01
+## L02
 
 ### 문제
 

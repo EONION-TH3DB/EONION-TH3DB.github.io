@@ -21,7 +21,7 @@ Name이 CodeEngn 일때 Serial을 구하시오
 
 <br>
 
-올리디버거
+### 올리디버거
 
 ![image-20220401161744862](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220401161744862.png)
 
@@ -29,19 +29,19 @@ Name이 CodeEngn 일때 Serial을 구하시오
 
 <br>
 
-ExeinFoPe
+### ExeinFoPe
 
 ![image-20220401161803424](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220401161803424.png)
 
 <br>
 
-언패킹(수동)
+### 언패킹(수동)
 
 ![image-20220401161826188](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220401161826188.png)
 
 <br>
 
-분기점 찾기
+### 분기점 찾기
 
 ![image-20220401161841510](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220401161841510.png)
 
@@ -51,7 +51,7 @@ ExeinFoPe
 
 <br>
 
-GetDigItemTextA 함수
+### GetDigItemTextA 함수
 
 ![image-20220401162014402](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220401162014402.png)
 
@@ -60,7 +60,7 @@ GetDigItemTextA 함수
 
 <br>
 
-F9
+### F9
 
 ![image-20220401162125043](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220401162125043.png)
 
@@ -70,7 +70,7 @@ F9
 
 <br>
 
-알고리즘
+### 알고리즘
 
 ![image-20220401162556846](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220401162556846.png)
 
@@ -82,6 +82,6 @@ F9
 
 <br>
 
-결과
+### 결과
 
 ![image-20220401163403236](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img/image-20220401163403236.png)
