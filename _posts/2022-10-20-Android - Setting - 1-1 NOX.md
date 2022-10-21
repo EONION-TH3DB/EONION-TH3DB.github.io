@@ -1,8 +1,10 @@
 ---
-title: "[Android] 1-1 녹스 루팅 탐지 우회 - 환경설정 - NOX"
+title: "[Android] 1-1 녹스 루팅 탐지 우회 - 환경설정 - NOX 세팅"
 ---
 
 <br>
+
+![image-20221021140022390](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221021140022390.png)
 
 # **1. 환경설정**
 
@@ -16,7 +18,9 @@ title: "[Android] 1-1 녹스 루팅 탐지 우회 - 환경설정 - NOX"
 
 1-2 JAVA 설치
 
-- a. JAVA 환경변수 설정
+- a. JAVA 설치
+
+- b. JAVA 환경변수 설정
 
 1-3 jd-gui 설치
 
@@ -30,7 +34,9 @@ title: "[Android] 1-1 녹스 루팅 탐지 우회 - 환경설정 - NOX"
 
 <BR>
 
-# **1. NOX**
+![image-20221021144408270](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221021144408270.png)
+
+# **1-1 NOX**
 
 ## 정의
 
