@@ -16,7 +16,7 @@ title: "[Android] 1-2 녹스 루팅 탐지 우회 - 환경설정 - JAVA 세팅"
 
 - c.  ADB Shell 연결
 
-**1-2 JAVA 설치**
+**1-2 JAVA 설치**					☚
 
 - **a. JAVA 설치**
 
@@ -108,3 +108,4 @@ Path 변수 찾은 뒤 [편집] 클릭
 - 명령어 : java -version
 
 ![image-20221021143616075](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221021143616075.png)
+
