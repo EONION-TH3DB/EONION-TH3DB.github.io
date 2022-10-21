@@ -82,8 +82,9 @@ Java는 버전에 따라 분석할 수 있는 **데이터의 범위가 달라**�
 
 <BR>
 
-- 변수 이름 : JAVA_HOME
-- 변수 값 : JDK 설치 폴더 경로
+변수 이름 : JAVA_HOME
+
+변수 값 : JDK 설치 폴더 경로
 
 ![image-20221021143010904](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221021143010904.png)
 
