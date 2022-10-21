@@ -16,11 +16,11 @@ title: "[Android] 1-2 녹스 루팅 탐지 우회 - 환경설정 - JAVA 세팅"
 
 - c.  ADB Shell 연결
 
-1-2 JAVA 설치
+## **1-2 JAVA 설치**
 
-- a. JAVA 설치
+- **a. JAVA 설치**
 
-- b. JAVA 환경변수 설정
+- **b. JAVA 환경변수 설정**
 
 1-3 jd-gui 설치
 
