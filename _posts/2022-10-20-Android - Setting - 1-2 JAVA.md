@@ -16,7 +16,7 @@ title: "[Android] 1-2 녹스 루팅 탐지 우회 - 환경설정 - JAVA 세팅"
 
 - c.  ADB Shell 연결
 
-## **1-2 JAVA 설치**
+**1-2 JAVA 설치**
 
 - **a. JAVA 설치**
 
