@@ -34,9 +34,11 @@ title: "[Android] 1-2 녹스 루팅 탐지 우회 - 환경설정 - JAVA 세팅"
 
 <BR>
 
+# **1-2 JAVA**
+
 ![image-20221021143725457](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221021143725457.png)
 
-# **JAVA **
+<BR>
 
 ## **JAVA 기술은 무엇이고 왜 필요할까?**
 

@@ -34,9 +34,11 @@ title: "[Android] 1-1 녹스 루팅 탐지 우회 - 환경설정 - NOX 세팅"
 
 <BR>
 
+# **1-1 NOX**
+
 ![image-20221021144408270](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221021144408270.png)
 
-# **1-1 NOX**
+<br>
 
 ## 정의
 
