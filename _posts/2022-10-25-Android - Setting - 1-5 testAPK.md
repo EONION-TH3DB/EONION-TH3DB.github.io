@@ -71,9 +71,9 @@ APK 파일에는 애플리케이션의 **모든 데이터**가 포함
 
 - META-INF
 
-  &emsp;&emsp;&emsp; **Signature File**
+  **Signature File**
 
-  &emsp;&emsp;&emsp;  **공개키**를 담은 인증서 등이 존재
+  **공개키**를 담은 인증서 등이 존재
 
 - res
 
@@ -98,6 +98,14 @@ APK 파일에는 애플리케이션의 **모든 데이터**가 포함
   &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; Broadcast Receiver : 안드로이드 내부 **이벤트** **핸들링**을 위한 컴포넌트 / ex) 문자 수신, 배터리 부족
 
   &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; Content Provider : 애플리케이션간 **데이터 공유**를 위한 컴포넌트
+
+- Classes.dex
+
+  &emsp;&emsp;&emsp; 애플리케이션 실행을 위한 코드가 존재
+
+- Resources.arsc
+
+  &emsp;&emsp;&emsp; 컴파일된 리소스(문자열, 스타일 등) 존재
 
 <br>
 
