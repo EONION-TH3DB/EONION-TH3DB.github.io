@@ -40,7 +40,7 @@ title: "[Android] 1-4 녹스 루팅 탐지 우회 - 환경설정 - NotePad++ 세
 
 <BR>
 
-# **1-3 NotePad++**
+# **1-4 NotePad++**
 
 ![image-20221025111832434](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221025111832434.png)
 
