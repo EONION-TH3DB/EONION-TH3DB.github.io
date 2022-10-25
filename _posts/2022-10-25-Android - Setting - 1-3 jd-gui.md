@@ -1,5 +1,5 @@
 ---
-title: "[Android] 1-2 녹스 루팅 탐지 우회 - 환경설정 - jd-gui 세팅"
+title: "[Android] 1-3 녹스 루팅 탐지 우회 - 환경설정 - jd-gui 세팅"
 ---
 
 <br>
@@ -37,7 +37,7 @@ title: "[Android] 1-2 녹스 루팅 탐지 우회 - 환경설정 - jd-gui 세팅
 
 <BR>
 
-# **1-2 jd-gui**
+# **1-3 jd-gui**
 
 ![image-20221025095045030](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221025095045030.png)
 
