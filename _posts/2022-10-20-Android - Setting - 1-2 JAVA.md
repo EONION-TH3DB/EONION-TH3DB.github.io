@@ -22,6 +22,8 @@ title: "[Android] 1-2 녹스 루팅 탐지 우회 - 환경설정 - JAVA 세팅"
 
 - **b. JAVA 환경변수 설정**
 
+- **c. apktool 설치**
+
 1-3 jd-gui 설치
 
 1-4 NotePad++ 설치
@@ -109,3 +111,32 @@ Path 변수 찾은 뒤 [편집] 클릭
 
 ![image-20221021143616075](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221021143616075.png)
 
+<br>
+
+<br>
+
+## apktool 설치
+
+### apktool이란
+
+APK 파일을 분석하여 리소스를 뽑아내고(디코딩), 코드를 수정하여 재빌드할 수 있게 해주는 도구이다.
+
+- 즉, APK 파일을 **컴파일**하고 디컴파일할 수 있는 도구
+
+<br>
+
+![image-20221031201817110](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221031201817110.png)
+
+[https://bitbucket.org/iBotPeaches/apktool/downloads/](https://bitbucket.org/iBotPeaches/apktool/downloads/) 해당 사이트에서 설치해주자
+
+<br>
+
+![image-20221031203556829](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221031203556829.png)
+
+apktool_버전.jar가 설치된 경로로 디렉토리 이동 후 
+
+java -jar apktool_버전.jar 명령어로 apktool 정상 설치 확인
+
+자, 이제 우리는 이 apktool로 **APK파일을 디컴파일**할 것이다.
+
+1강 환경세팅이 끝나고 **2강에서 진행**할 것이니 참고하자.
