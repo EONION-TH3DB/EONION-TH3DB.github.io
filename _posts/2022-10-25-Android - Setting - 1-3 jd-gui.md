@@ -1,5 +1,5 @@
 ---
-title: "[Android] 1-3 녹스 루팅 탐지 우회 - 환경설정 - jd-gui 세팅"
+title: "[Android] 루팅 탐지 우회(NOX) - 1-3. 환경설정 - jd-gui 세팅"
 ---
 
 <br>

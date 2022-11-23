@@ -1,5 +1,5 @@
 ---
-title: "[Android] 1-4 녹스 루팅 탐지 우회 - 환경설정 - NotePad++ 세팅"
+title: "[Android] 루팅 탐지 우회(NOX) - 1-4. 환경설정 - NotePad++ 세팅"
 ---
 
 <br>

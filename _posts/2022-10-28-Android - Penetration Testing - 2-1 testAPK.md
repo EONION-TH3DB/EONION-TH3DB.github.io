@@ -1,12 +1,12 @@
 ---
-title: "[Android] 2 녹스 루팅 탐지 우회 - 루팅 탐지 우회"
+title: "[Android] 루팅 탐지 우회(NOX) - 2. 진단"
 ---
 
 <br>
 
 ![image-20221025130114073](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221025130114073.png)
 
-# **2. 루팅 탐지 우회**
+# **2. 진단**
 
 - 애플리케이션 APK 추출
 - Decompile

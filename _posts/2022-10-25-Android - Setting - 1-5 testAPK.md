@@ -1,5 +1,5 @@
 ---
-title: "[Android] 1-5 녹스 루팅 탐지 우회 - 환경설정 - TestAPK 세팅"
+title: "[Android] 루팅 탐지 우회(NOX) - 1-5. 환경설정 - TestAPK 세팅"
 ---
 
 <br>
