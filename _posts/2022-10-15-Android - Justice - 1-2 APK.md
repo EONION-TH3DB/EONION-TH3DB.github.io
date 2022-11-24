@@ -1,5 +1,5 @@
 ---
-title: "[Android] 1-1. APK 구조"
+title: "[Android] 1-2. APK 구조"
 ---
 
 <br>
