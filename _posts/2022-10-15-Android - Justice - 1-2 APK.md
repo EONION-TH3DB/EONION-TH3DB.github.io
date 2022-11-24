@@ -13,6 +13,7 @@ title: "[Android] 1-1. APK 구조"
 - APK란?
 - APK 파일 구조
 - 컴파일 / 디컴파일 / 패키징 / 리패키징
+- 애플리케이션 진단 도구
 
 <br><br>
 
@@ -106,7 +107,7 @@ Signature File
 
 전 게시물에서 설명했다싶이, JAVA는 **바이트 코드**로 변환(컴파일)된다.
 
-<하이퍼링크>
+[https://eonion-th3db.github.io/Android-Justice-1-1-Android/](https://eonion-th3db.github.io/Android-Justice-1-1-Android/) ← 전 게시물
 
 <br>
 
@@ -115,3 +116,47 @@ Signature File
 ![image-20221124164529909](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221124164529909.png)
 
 앱의 제작과정을 **거꾸로** 하여 앱의 최초 형태인 소스 코드로 변환한 후 소스 코드를 **수정**하거나 다른 코드를 삽입하고 앱을 **다시 제작**하는 일련의 과정
+
+<br><br>
+
+## 애플리케이션 진단 도구
+
+### ADB shell
+
+녹스 혹은 단말과 통신을 위한 명령 수행 콘솔
+
+패키지 설치, 삭제, 쉘 명령 등 수행
+
+<br>
+
+### Apktool
+
+APK 파일을 디컴파일 및 리빌드하기 위한 도구
+
+<br>
+
+### Dex2jar
+
+Dex 파일을 자바 클래스(CLASS) 파일로 변환(컴파일)
+
+<br>
+
+### jd-gui
+
+Java Decompiler 도구
+
+<br>
+
+### Keytool
+
+APK 파일 서명하기 위한 키 생성 도구
+
+<br>
+
+### Jarsigner
+
+리빌드된 APK 파일에 코드 서명을 위한 도구
+
+<br><br>
+
+앞으로 위 도구들을 사용해서 **루팅 탐지 우회**, **메모리 내 중요정보** 탈취를 진행해보자
