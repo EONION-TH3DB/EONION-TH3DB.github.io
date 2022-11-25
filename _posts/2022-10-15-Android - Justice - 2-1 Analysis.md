@@ -10,8 +10,8 @@ title: "[Android] 2. APK 정적/동적 분석"
 
 # APK 분석
 
-- 1. APK 정적 분석
-- 2. APK 동적 분석
+1. APK 정적 분석
+2. APK 동적 분석
 
 <br><br>
 
