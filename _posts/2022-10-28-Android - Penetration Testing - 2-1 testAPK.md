@@ -35,7 +35,7 @@ title: "[Android] 루팅 탐지 우회(NOX) - 2. 진단"
 
 ![image-20221028160857739](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221028160857739.png)
 
-Nox가 설치된 경로에 <애플리케이션 이름>.apk로 **추출**된 것 확인 가능
+Nox가 설치된 경로에 <애플리케이션이름>.apk로 **추출**된 것 확인 가능
 
 <br>
 
