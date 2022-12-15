@@ -4,7 +4,7 @@ title: "[Web Hacking] 이론 - 1-1 웹"
 
 <br>
 
-![image-20221125192248572](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221125192248572.png)
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221125192248572.png" alt="image-20221125192248572" style="zoom: 67%;" />
 
 # Web Hacking
 
@@ -33,15 +33,15 @@ title: "[Web Hacking] 이론 - 1-1 웹"
 
 ## 정의
 
-![image-20221125193507204](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221125193507204.png)
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221125193507204.png" alt="image-20221125193507204" style="zoom:80%;" />
 
-월드 와이드 웹(World Wide Web, WWW, W3)을 간단하게 줄여 웹이라고 한다.
+**월드 와이드 웹**(World Wide Web, WWW, W3)을 간단하게 줄여 웹이라고 한다.
 
-영어로 사전적 의미 '거미줄'이라는 뜻.
+영어로 사전적 의미 '**거미줄**'이라는 뜻.
 
-인터넷상에서 각각의 사용자가 연결되어 서로 정보를 공유한다는 의미에서 유래되었다.
+인터넷상에서 **각각의 사용자가 연결**되어 서로 정보를 **공유**한다는 의미에서 유래되었다.
 
-즉, 웹이란 인터넷상의 서비스 중 HTTP를 이용하여 정보를 공유하는 통신 서비스를 말한다.
+즉, 웹이란 인터넷상의 서비스 중 **HTTP**를 이용하여 정보를 **공유**하는 **통신 서비스**를 말한다.
 
 <br>
 
@@ -49,23 +49,23 @@ title: "[Web Hacking] 이론 - 1-1 웹"
 
 ![image-20221125193745855](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221125193745855.png)
 
-색을 칠하기 위해서는 색연필이 필요하듯이 웹을 사용하기 위해서는 웹 브라우저가 필요하다.
+색을 칠하기 위해서는 **색연필**이 필요하듯이 웹을 사용하기 위해서는 **웹 브라우저**가 필요하다.
 
-웹 서버에서 이동하며 쌍방향으로 통신하고 HTML 문서나 파일을 출력하는 그래픽 사용자 인터페이스 기반의 응용 소프트웨어이다.
+웹 서버에서 이동하며 **쌍방향**으로 통신하고 HTML 문서나 파일을 **출력**하는 **그래픽 사용자 인터페이스** 기반의 응용 소프트웨어이다.
 
 <br>
 
 ## 웹 애플리케이션
 
-![image-20221125195559213](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221125195559213.png)
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221125195559213.png" alt="image-20221125195559213" style="zoom:80%;" />
 
-사용자의 요청을 동적으로 처리할 수 있도록 만들어진 프로그램
+사용자의 요청을 **동적**으로 처리할 수 있도록 만들어진 프로그램
 
 <br>
 
 ## DBMS
 
-![image-20221125195757998](https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221125195757998.png)
+<img src="https://raw.githubusercontent.com/EONION-TH3DB/image_repo/main/img2/image-20221125195757998.png" alt="image-20221125195757998" style="zoom:80%;" />
 
 데이터를 저장하기 위해 사용하는 데이터 저장소관리 프로그램
 
